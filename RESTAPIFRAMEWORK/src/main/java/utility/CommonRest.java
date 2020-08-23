@@ -29,7 +29,6 @@ public class CommonRest {
 
 	static Logger logger = LogManager.getLogger(CommonRest.class);
 	
-
 	public void readPropertiesFile() {
 
 		logger.info("***************************************Started Execution of Test Cases****************************************");
@@ -41,7 +40,6 @@ public class CommonRest {
 					System.getProperty("user.dir") + "\\src\\main\\java\\utility\\config.properties");
 			prop.load(file);
 			for (String key : prop.stringPropertyNames()) {
-//				System.out.println(key + "===========" + prop.getProperty(key));
 				logger.info(key+":"+prop.getProperty(key));
 				properties.put(key, prop.getProperty(key));
 
@@ -83,7 +81,6 @@ public class CommonRest {
 					arrPayloadAttr = jsonPayload.getJSONArray(payloadId);
 			}
 
-//			System.out.println("JSON Converted in to array is=" + arrPayloadAttr);
 			logger.info("JSON Converted in to array is=" + arrPayloadAttr);
 
 		} catch (Exception e) {
@@ -97,12 +94,10 @@ public class CommonRest {
 
 	public static void createrequestToSend(String endpoint) {
 
-//		System.out.println("Array Payload attribute is=" + arrPayloadAttr);
 		logger.info("Array Payload attribute is=" + arrPayloadAttr);
 
 		String reqType = null;
 		String reqEndpoint = null;
-//		System.out.println("Endpoint is="+endpoint);
 		logger.info("Endpoint is="+endpoint);
 		
 		if (endpoint.equalsIgnoreCase("Google_API"))
@@ -118,7 +113,6 @@ public class CommonRest {
 			String dataAttribute = (String) jsonDataAttr.keys().next();
 
 			if (dataAttribute.equalsIgnoreCase("ContentType")) {
-//				System.out.println(jsonDataAttr.getString(dataAttribute));
 				logger.info(jsonDataAttr.getString(dataAttribute));
 
 				if (jsonDataAttr.getString(dataAttribute).equalsIgnoreCase("x-www-form-urlencoded"))
@@ -130,7 +124,6 @@ public class CommonRest {
 			} else if (dataAttribute.equalsIgnoreCase("Endpoint")) {
 				reqEndpoint = jsonDataAttr.getString("Endpoint");
 				dictionary.put("EndPoint", reqEndpoint);
-//				System.out.println("Endpoint is=" + dictionary.get("EndPoint"));
 				logger.info("Endpoint is=" + dictionary.get("EndPoint"));
 			}
 
@@ -186,12 +179,7 @@ public class CommonRest {
 
 		}
 
-//		System.out.println("Data in Dictionary is=" + dictionary);
 		logger.info("Data in Dictionary is=" + dictionary);
-
-//		System.out.println("ContentType is=" + dictionary.get("Content Type"));
-//		System.out.println("Request Endpoint =" + dictionary.get("ReqType"));
-//		System.out.println("Request Body is=" + dictionary.get("ReqBody"));
 		
 		logger.info("ContentType is=" + dictionary.get("Content Type"));
 		logger.info("Request Endpoint =" + dictionary.get("ReqType"));
@@ -222,7 +210,6 @@ public class CommonRest {
 
 			arrPayloadAttr = new JSONArray(payload);
 			dictionary.put("PAYLOAD", arrPayloadAttr.toString());
-//			System.out.println("Array after updating a value is=" + arrPayloadAttr);
 			logger.info("Array after updating a value is=" + arrPayloadAttr);
 			return arrPayloadAttr;
 
@@ -250,8 +237,7 @@ public class CommonRest {
 
 		int Actual_status_code = response.getStatusCode();
 
-//		System.out.println("Response is=" + response);
-//		System.out.println("Status Code is=" + Actual_status_code);
+
 		logger.info("Response is=" + response);
 		logger.info("Status Code is=" + Actual_status_code);
 
@@ -261,7 +247,6 @@ public class CommonRest {
 
 	public void valueGeneratedInResponse(String fields, String values) {
 		String response_converted_in_string = response.asString();
-//		System.out.println(response_converted_in_string);
 		logger.info("Response Converted in String Format is="+response_converted_in_string);
 		JsonPath js = new JsonPath(response_converted_in_string);
 		String splitted_fields[];
@@ -272,15 +257,12 @@ public class CommonRest {
 			splitted_values = values.split(";");
 
 			for (int i = 0; i < splitted_fields.length; i++) {
-//				System.out.println(splitted_fields[i] + " Value is=" + js.get(splitted_fields[i]));
 				
 				logger.info(splitted_fields[i] + " Value is=" + js.get(splitted_fields[i]));
 				org.junit.Assert.assertEquals(js.get(splitted_fields[i]).toString().replace("[", "").replace("]", ""),
 						splitted_values[i].toString());
 			}
 		} else {
-//			System.out.println(fields + " Value is=" + js.get(fields));
-//			System.out.println("Value Passed from Featutre File is=" + values);
 			
 			logger.info(fields + " Value is=" + js.get(fields));
 			logger.info("Value Passed from Featutre File is=" + values);
