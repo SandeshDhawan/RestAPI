@@ -1,0 +1,94 @@
+{
+	"Payload": [
+	{
+		"PayloadId_001": [
+			{"Description": "Post Request for Google API"},
+			{"RequestType": "POST"},
+			{"ContentType": "application/json"},
+			{"Endpoint": "/maps/api/place/add/json"},
+			{"QueryParameters": [
+				{"Key": "qaclick123"}
+			]
+			},
+			{
+				"Body": {
+					"location": {
+						"lat": -38.383494,
+						"lng": 33.427362
+					},
+					"accuracy": 50,
+					"name": "Frontline house",
+					"phone_number": "(+91) 983 893 3937",
+					"address": "29, side layout, cohen 09",
+					"types": [
+						"shoe park",
+						"shop"
+					],
+					"website": "http://google.com",
+					"language": "French-IN"
+				}
+			}
+		]
+	},
+	{
+		"PayloadId_002": [
+			{"Description": "Post Request for Google API"},
+			{"RequestType": "POST"},
+			{"ContentType": "application/json"},
+			{"Endpoint": "/maps/api/place/add/json"},
+			{"QueryParameters": [
+				{"Key": "qaclick123"}
+			]
+			},
+			{
+				"Body": {
+					"location": {
+						"lat": -38.383494,
+						"lng": 33.427362
+					},
+					"accuracy": 50,
+					"name": "Backword",
+					"phone_number": "(+91) 456 222 1111",
+					"address": "31, side layout, cohen 09",
+					"types": [
+						"shoe park",
+						"shop"
+					],
+					"website": "http://google.com",
+					"language": "India"
+				}
+			}
+		]
+	},
+	{
+		"PayloadId_002": [
+			{"Description": "Post Request for Google API"},
+			{"RequestType": "POST"},
+			{"ContentType": "application/json"},
+			{"Endpoint": "/maps/api/place/add/json"},
+			{"QueryParameters": [
+				{"Key": "qaclick123"}
+			]
+			},
+			{
+				"Body": {
+					"location": {
+						"lat": -38.383494,
+						"lng": 33.427362
+					},
+					"accuracy": 50,
+					"name": "SB Road",
+					"phone_number": "(+91) 453 333 6666",
+					"address": "51, side layout, cohen 09",
+					"types": [
+						"shoe park",
+						"shop"
+					],
+					"website": "http://google.com",
+					"language": "Australia"
+				}
+			}
+		]
+	}
+	
+]}

@@ -1,0 +1,263 @@
+[INFO ] 2020-08-23 11:09:05.750 [main] CommonRest - ***************************************Stated Execution of Test Cases****************************************
+[INFO ] 2020-08-23 11:09:05.755 [main] CommonRest - user_payload_endpoint:https://identity-01.intg.fcagcv.com
+[INFO ] 2020-08-23 11:09:05.756 [main] CommonRest - ROSupportOwner_UserAuthToken:Basic NXM1bWQ5NXJ0MzkwNXVtMGw4ZzFrcWs4aWc6NG80bm12ODhhZzJyMDRtYm8xNnJsZGVraGhyZ2l0ZGtuZDd0NzRsYnJwcGt2czN2OWZq
+[INFO ] 2020-08-23 11:09:05.756 [main] CommonRest - Liabrary_API:http://216.10.245.166
+[INFO ] 2020-08-23 11:09:05.756 [main] CommonRest - SelfManage_UserAuthToken:Basic MTM0MWxxa3N1ZmUwbm1vaW9kdnRjc2t2cWI6MWlxZjFsYWw5bjlqcG90ZnFwazNkOTdkcG91ZXFtdXU2bmFtYmE4cGE4amhxb2x0c3M2Yw==
+[INFO ] 2020-08-23 11:09:05.757 [main] CommonRest - Google_API:https://rahulshettyacademy.com
+[INFO ] 2020-08-23 11:09:05.764 [main] CommonRest - JSON Converted in to array is=[{"Description":"GET Request for Google API"},{"RequestType":"GET"},{"ContentType":"application/json"},{"Endpoint":"/maps/api/place/get/json"},{"QueryParameters":[{"Key":"qaclick123"},{"place_id":"8df3c851d5f7159c79f54b7355c0f9c1"}]}]
+[INFO ] 2020-08-23 11:09:05.764 [main] CommonRest - Array after updating a value is=[{"Description":"GET Request for Google API"},{"RequestType":"GET"},{"ContentType":"application/json"},{"Endpoint":"/maps/api/place/get/json"},{"QueryParameters":[{"Key":"qaclick123"},{"place_id":"8df3c851d5f7159c79f54b7355c0f9c1"}]}]
+[INFO ] 2020-08-23 11:09:05.772 [main] CommonRest - Array Payload attribute is=[{"Description":"GET Request for Google API"},{"RequestType":"GET"},{"ContentType":"application/json"},{"Endpoint":"/maps/api/place/get/json"},{"QueryParameters":[{"Key":"qaclick123"},{"place_id":"8df3c851d5f7159c79f54b7355c0f9c1"}]}]
+[INFO ] 2020-08-23 11:09:05.772 [main] CommonRest - Endpoint is=Google_API
+[INFO ] 2020-08-23 11:09:06.411 [main] CommonRest - application/json
+[INFO ] 2020-08-23 11:09:06.478 [main] CommonRest - Endpoint is=/maps/api/place/get/json
+[INFO ] 2020-08-23 11:09:06.495 [main] CommonRest - Data in Dictionary is={ReqType=GET, Content Type=application/json, PAYLOAD=[{"Description":"GET Request for Google API"},{"RequestType":"GET"},{"ContentType":"application/json"},{"Endpoint":"/maps/api/place/get/json"},{"QueryParameters":[{"Key":"qaclick123"},{"place_id":"8df3c851d5f7159c79f54b7355c0f9c1"}]}], EndPoint=/maps/api/place/get/json, Key=qaclick123, place_id=8df3c851d5f7159c79f54b7355c0f9c1}
+[INFO ] 2020-08-23 11:09:06.497 [main] CommonRest - ContentType is=application/json
+[INFO ] 2020-08-23 11:09:06.498 [main] CommonRest - Request Endpoint =GET
+[INFO ] 2020-08-23 11:09:06.499 [main] CommonRest - Request Body is=null
+[INFO ] 2020-08-23 11:09:08.570 [main] CommonRest - Response is=io.restassured.internal.RestAssuredResponseImpl@49cf9028
+[INFO ] 2020-08-23 11:09:08.570 [main] CommonRest - Status Code is=200
+[INFO ] 2020-08-23 11:09:08.591 [main] CommonRest - ***************************************Stated Execution of Test Cases****************************************
+[INFO ] 2020-08-23 11:09:08.592 [main] CommonRest - user_payload_endpoint:https://identity-01.intg.fcagcv.com
+[INFO ] 2020-08-23 11:09:08.593 [main] CommonRest - ROSupportOwner_UserAuthToken:Basic NXM1bWQ5NXJ0MzkwNXVtMGw4ZzFrcWs4aWc6NG80bm12ODhhZzJyMDRtYm8xNnJsZGVraGhyZ2l0ZGtuZDd0NzRsYnJwcGt2czN2OWZq
+[INFO ] 2020-08-23 11:09:08.593 [main] CommonRest - Liabrary_API:http://216.10.245.166
+[INFO ] 2020-08-23 11:09:08.593 [main] CommonRest - SelfManage_UserAuthToken:Basic MTM0MWxxa3N1ZmUwbm1vaW9kdnRjc2t2cWI6MWlxZjFsYWw5bjlqcG90ZnFwazNkOTdkcG91ZXFtdXU2bmFtYmE4cGE4amhxb2x0c3M2Yw==
+[INFO ] 2020-08-23 11:09:08.593 [main] CommonRest - Google_API:https://rahulshettyacademy.com
+[INFO ] 2020-08-23 11:09:08.594 [main] CommonRest - JSON Converted in to array is=[{"Description":"GET Request for Google API"},{"RequestType":"GET"},{"ContentType":"application/json"},{"Endpoint":"/maps/api/place/get/json"},{"QueryParameters":[{"place_id":"1234"},{"Key":"qaclick123"}]}]
+[INFO ] 2020-08-23 11:09:08.595 [main] CommonRest - Array after updating a value is=[{"Description":"GET Request for Google API"},{"RequestType":"GET"},{"ContentType":"application/json"},{"Endpoint":"/maps/api/place/get/json"},{"QueryParameters":[{"place_id":"1234"},{"Key":"qaclick123"}]}]
+[INFO ] 2020-08-23 11:09:08.595 [main] CommonRest - Array Payload attribute is=[{"Description":"GET Request for Google API"},{"RequestType":"GET"},{"ContentType":"application/json"},{"Endpoint":"/maps/api/place/get/json"},{"QueryParameters":[{"place_id":"1234"},{"Key":"qaclick123"}]}]
+[INFO ] 2020-08-23 11:09:08.595 [main] CommonRest - Endpoint is=Google_API
+[INFO ] 2020-08-23 11:09:08.596 [main] CommonRest - application/json
+[INFO ] 2020-08-23 11:09:08.597 [main] CommonRest - Endpoint is=/maps/api/place/get/json
+[INFO ] 2020-08-23 11:09:08.598 [main] CommonRest - Data in Dictionary is={ReqType=GET, Content Type=application/json, PAYLOAD=[{"Description":"GET Request for Google API"},{"RequestType":"GET"},{"ContentType":"application/json"},{"Endpoint":"/maps/api/place/get/json"},{"QueryParameters":[{"place_id":"1234"},{"Key":"qaclick123"}]}], EndPoint=/maps/api/place/get/json, Key=qaclick123, place_id=1234}
+[INFO ] 2020-08-23 11:09:08.598 [main] CommonRest - ContentType is=application/json
+[INFO ] 2020-08-23 11:09:08.598 [main] CommonRest - Request Endpoint =GET
+[INFO ] 2020-08-23 11:09:08.599 [main] CommonRest - Request Body is=null
+[INFO ] 2020-08-23 11:09:08.722 [main] CommonRest - Response is=io.restassured.internal.RestAssuredResponseImpl@58e92c23
+[INFO ] 2020-08-23 11:09:08.722 [main] CommonRest - Status Code is=200
+[INFO ] 2020-08-23 11:09:08.736 [main] CommonRest - ***************************************Stated Execution of Test Cases****************************************
+[INFO ] 2020-08-23 11:09:08.737 [main] CommonRest - user_payload_endpoint:https://identity-01.intg.fcagcv.com
+[INFO ] 2020-08-23 11:09:08.737 [main] CommonRest - ROSupportOwner_UserAuthToken:Basic NXM1bWQ5NXJ0MzkwNXVtMGw4ZzFrcWs4aWc6NG80bm12ODhhZzJyMDRtYm8xNnJsZGVraGhyZ2l0ZGtuZDd0NzRsYnJwcGt2czN2OWZq
+[INFO ] 2020-08-23 11:09:08.738 [main] CommonRest - Liabrary_API:http://216.10.245.166
+[INFO ] 2020-08-23 11:09:08.738 [main] CommonRest - SelfManage_UserAuthToken:Basic MTM0MWxxa3N1ZmUwbm1vaW9kdnRjc2t2cWI6MWlxZjFsYWw5bjlqcG90ZnFwazNkOTdkcG91ZXFtdXU2bmFtYmE4cGE4amhxb2x0c3M2Yw==
+[INFO ] 2020-08-23 11:09:08.738 [main] CommonRest - Google_API:https://rahulshettyacademy.com
+[INFO ] 2020-08-23 11:09:08.739 [main] CommonRest - JSON Converted in to array is=[{"Description":"GET Request for Liabrary API using Author Name"},{"RequestType":"POST"},{"ContentType":"application/json"},{"Endpoint":"/Library/GetBook.php"},{"QueryParameters":[{"AuthorName":"Test_Two"}]}]
+[INFO ] 2020-08-23 11:09:08.741 [main] CommonRest - Array after updating a value is=[{"Description":"GET Request for Liabrary API using Author Name"},{"RequestType":"POST"},{"ContentType":"application/json"},{"Endpoint":"/Library/GetBook.php"},{"QueryParameters":[{"AuthorName":"Test_Two"}]}]
+[INFO ] 2020-08-23 11:09:08.743 [main] CommonRest - Array Payload attribute is=[{"Description":"GET Request for Liabrary API using Author Name"},{"RequestType":"POST"},{"ContentType":"application/json"},{"Endpoint":"/Library/GetBook.php"},{"QueryParameters":[{"AuthorName":"Test_Two"}]}]
+[INFO ] 2020-08-23 11:09:08.743 [main] CommonRest - Endpoint is=Liabrary_API
+[INFO ] 2020-08-23 11:09:08.743 [main] CommonRest - application/json
+[INFO ] 2020-08-23 11:09:08.746 [main] CommonRest - Endpoint is=/Library/GetBook.php
+[INFO ] 2020-08-23 11:09:08.747 [main] CommonRest - Data in Dictionary is={ReqType=POST, AuthorName=Test_Two, Content Type=application/json, PAYLOAD=[{"Description":"GET Request for Liabrary API using Author Name"},{"RequestType":"POST"},{"ContentType":"application/json"},{"Endpoint":"/Library/GetBook.php"},{"QueryParameters":[{"AuthorName":"Test_Two"}]}], EndPoint=/Library/GetBook.php, Key=qaclick123, place_id=1234}
+[INFO ] 2020-08-23 11:09:08.747 [main] CommonRest - ContentType is=application/json
+[INFO ] 2020-08-23 11:09:08.748 [main] CommonRest - Request Endpoint =POST
+[INFO ] 2020-08-23 11:09:08.748 [main] CommonRest - Request Body is=null
+[INFO ] 2020-08-23 11:09:08.934 [main] CommonRest - Response is=io.restassured.internal.RestAssuredResponseImpl@6ac0b715
+[INFO ] 2020-08-23 11:09:08.935 [main] CommonRest - Status Code is=200
+[INFO ] 2020-08-23 11:09:08.936 [main] CommonRest - Response Converted in String Format is=[{"book_name":"Book_Two","isbn":"isbn_two","aisle":"102"}]
+[INFO ] 2020-08-23 11:09:09.556 [main] CommonRest - book_name Value is=[Book_Two]
+[INFO ] 2020-08-23 11:09:09.556 [main] CommonRest - Value Passed from Featutre File is=Book_Two
+[INFO ] 2020-08-23 11:09:09.579 [main] CommonRest - ***************************************Stated Execution of Test Cases****************************************
+[INFO ] 2020-08-23 11:09:09.579 [main] CommonRest - user_payload_endpoint:https://identity-01.intg.fcagcv.com
+[INFO ] 2020-08-23 11:09:09.579 [main] CommonRest - ROSupportOwner_UserAuthToken:Basic NXM1bWQ5NXJ0MzkwNXVtMGw4ZzFrcWs4aWc6NG80bm12ODhhZzJyMDRtYm8xNnJsZGVraGhyZ2l0ZGtuZDd0NzRsYnJwcGt2czN2OWZq
+[INFO ] 2020-08-23 11:09:09.579 [main] CommonRest - Liabrary_API:http://216.10.245.166
+[INFO ] 2020-08-23 11:09:09.579 [main] CommonRest - SelfManage_UserAuthToken:Basic MTM0MWxxa3N1ZmUwbm1vaW9kdnRjc2t2cWI6MWlxZjFsYWw5bjlqcG90ZnFwazNkOTdkcG91ZXFtdXU2bmFtYmE4cGE4amhxb2x0c3M2Yw==
+[INFO ] 2020-08-23 11:09:09.579 [main] CommonRest - Google_API:https://rahulshettyacademy.com
+[INFO ] 2020-08-23 11:09:09.580 [main] CommonRest - JSON Converted in to array is=[{"Description":"GET Request for Liabrary API using Author Name"},{"RequestType":"POST"},{"ContentType":"application/json"},{"Endpoint":"/Library/GetBook.php"},{"QueryParameters":[{"AuthorName":"wrong_author_name"}]}]
+[INFO ] 2020-08-23 11:09:09.581 [main] CommonRest - Array after updating a value is=[{"Description":"GET Request for Liabrary API using Author Name"},{"RequestType":"POST"},{"ContentType":"application/json"},{"Endpoint":"/Library/GetBook.php"},{"QueryParameters":[{"AuthorName":"wrong_author_name"}]}]
+[INFO ] 2020-08-23 11:09:09.581 [main] CommonRest - Array Payload attribute is=[{"Description":"GET Request for Liabrary API using Author Name"},{"RequestType":"POST"},{"ContentType":"application/json"},{"Endpoint":"/Library/GetBook.php"},{"QueryParameters":[{"AuthorName":"wrong_author_name"}]}]
+[INFO ] 2020-08-23 11:09:09.582 [main] CommonRest - Endpoint is=Liabrary_API
+[INFO ] 2020-08-23 11:09:09.582 [main] CommonRest - application/json
+[INFO ] 2020-08-23 11:09:09.583 [main] CommonRest - Endpoint is=/Library/GetBook.php
+[INFO ] 2020-08-23 11:09:09.583 [main] CommonRest - Data in Dictionary is={ReqType=POST, AuthorName=wrong_author_name, Content Type=application/json, PAYLOAD=[{"Description":"GET Request for Liabrary API using Author Name"},{"RequestType":"POST"},{"ContentType":"application/json"},{"Endpoint":"/Library/GetBook.php"},{"QueryParameters":[{"AuthorName":"wrong_author_name"}]}], EndPoint=/Library/GetBook.php, Key=qaclick123, place_id=1234}
+[INFO ] 2020-08-23 11:09:09.584 [main] CommonRest - ContentType is=application/json
+[INFO ] 2020-08-23 11:09:09.584 [main] CommonRest - Request Endpoint =POST
+[INFO ] 2020-08-23 11:09:09.585 [main] CommonRest - Request Body is=null
+[INFO ] 2020-08-23 11:09:09.719 [main] CommonRest - Response is=io.restassured.internal.RestAssuredResponseImpl@6a9b9909
+[INFO ] 2020-08-23 11:09:09.719 [main] CommonRest - Status Code is=404
+[INFO ] 2020-08-23 11:09:09.719 [main] CommonRest - Response Converted in String Format is={"msg":"The book by requested bookid \/ author name does not exists!"}
+[INFO ] 2020-08-23 11:09:09.729 [main] CommonRest - msg Value is=The book by requested bookid / author name does not exists!
+[INFO ] 2020-08-23 11:09:09.730 [main] CommonRest - Value Passed from Featutre File is=The book by requested bookid / author name does not exists!
+[INFO ] 2020-08-23 11:09:09.751 [main] CommonRest - ***************************************Stated Execution of Test Cases****************************************
+[INFO ] 2020-08-23 11:09:09.752 [main] CommonRest - user_payload_endpoint:https://identity-01.intg.fcagcv.com
+[INFO ] 2020-08-23 11:09:09.752 [main] CommonRest - ROSupportOwner_UserAuthToken:Basic NXM1bWQ5NXJ0MzkwNXVtMGw4ZzFrcWs4aWc6NG80bm12ODhhZzJyMDRtYm8xNnJsZGVraGhyZ2l0ZGtuZDd0NzRsYnJwcGt2czN2OWZq
+[INFO ] 2020-08-23 11:09:09.752 [main] CommonRest - Liabrary_API:http://216.10.245.166
+[INFO ] 2020-08-23 11:09:09.752 [main] CommonRest - SelfManage_UserAuthToken:Basic MTM0MWxxa3N1ZmUwbm1vaW9kdnRjc2t2cWI6MWlxZjFsYWw5bjlqcG90ZnFwazNkOTdkcG91ZXFtdXU2bmFtYmE4cGE4amhxb2x0c3M2Yw==
+[INFO ] 2020-08-23 11:09:09.752 [main] CommonRest - Google_API:https://rahulshettyacademy.com
+[INFO ] 2020-08-23 11:09:09.753 [main] CommonRest - JSON Converted in to array is=[{"Description":"GET Request for Liabrary API using ID"},{"RequestType":"POST"},{"ContentType":"application/json"},{"Endpoint":"/Library/GetBook.php"},{"QueryParameters":[{"ID":"T111one111100"}]}]
+[INFO ] 2020-08-23 11:09:09.754 [main] CommonRest - Array after updating a value is=[{"Description":"GET Request for Liabrary API using ID"},{"RequestType":"POST"},{"ContentType":"application/json"},{"Endpoint":"/Library/GetBook.php"},{"QueryParameters":[{"ID":"T111one111100"}]}]
+[INFO ] 2020-08-23 11:09:09.754 [main] CommonRest - Array Payload attribute is=[{"Description":"GET Request for Liabrary API using ID"},{"RequestType":"POST"},{"ContentType":"application/json"},{"Endpoint":"/Library/GetBook.php"},{"QueryParameters":[{"ID":"T111one111100"}]}]
+[INFO ] 2020-08-23 11:09:09.754 [main] CommonRest - Endpoint is=Liabrary_API
+[INFO ] 2020-08-23 11:09:09.754 [main] CommonRest - application/json
+[INFO ] 2020-08-23 11:09:09.755 [main] CommonRest - Endpoint is=/Library/GetBook.php
+[INFO ] 2020-08-23 11:09:09.755 [main] CommonRest - Data in Dictionary is={ReqType=POST, AuthorName=wrong_author_name, Content Type=application/json, PAYLOAD=[{"Description":"GET Request for Liabrary API using ID"},{"RequestType":"POST"},{"ContentType":"application/json"},{"Endpoint":"/Library/GetBook.php"},{"QueryParameters":[{"ID":"T111one111100"}]}], EndPoint=/Library/GetBook.php, ID=T111one111100, Key=qaclick123, place_id=1234}
+[INFO ] 2020-08-23 11:09:09.755 [main] CommonRest - ContentType is=application/json
+[INFO ] 2020-08-23 11:09:09.755 [main] CommonRest - Request Endpoint =POST
+[INFO ] 2020-08-23 11:09:09.755 [main] CommonRest - Request Body is=null
+[INFO ] 2020-08-23 11:09:09.864 [main] CommonRest - Response is=io.restassured.internal.RestAssuredResponseImpl@14229fa7
+[INFO ] 2020-08-23 11:09:09.864 [main] CommonRest - Status Code is=200
+[INFO ] 2020-08-23 11:09:09.865 [main] CommonRest - Response Converted in String Format is=[{"book_name":"1111","isbn":"T111one","aisle":"111100","author":"Tes111tOne"}]
+[INFO ] 2020-08-23 11:09:09.876 [main] CommonRest - book_name Value is=[1111]
+[INFO ] 2020-08-23 11:09:09.894 [main] CommonRest - isbn Value is=[T111one]
+[INFO ] 2020-08-23 11:09:09.922 [main] CommonRest - aisle Value is=[111100]
+[INFO ] 2020-08-23 11:09:09.938 [main] CommonRest - author Value is=[Tes111tOne]
+[INFO ] 2020-08-23 11:09:09.956 [main] CommonRest - ***************************************Stated Execution of Test Cases****************************************
+[INFO ] 2020-08-23 11:09:09.957 [main] CommonRest - user_payload_endpoint:https://identity-01.intg.fcagcv.com
+[INFO ] 2020-08-23 11:09:09.957 [main] CommonRest - ROSupportOwner_UserAuthToken:Basic NXM1bWQ5NXJ0MzkwNXVtMGw4ZzFrcWs4aWc6NG80bm12ODhhZzJyMDRtYm8xNnJsZGVraGhyZ2l0ZGtuZDd0NzRsYnJwcGt2czN2OWZq
+[INFO ] 2020-08-23 11:09:09.957 [main] CommonRest - Liabrary_API:http://216.10.245.166
+[INFO ] 2020-08-23 11:09:09.957 [main] CommonRest - SelfManage_UserAuthToken:Basic MTM0MWxxa3N1ZmUwbm1vaW9kdnRjc2t2cWI6MWlxZjFsYWw5bjlqcG90ZnFwazNkOTdkcG91ZXFtdXU2bmFtYmE4cGE4amhxb2x0c3M2Yw==
+[INFO ] 2020-08-23 11:09:09.957 [main] CommonRest - Google_API:https://rahulshettyacademy.com
+[INFO ] 2020-08-23 11:09:09.958 [main] CommonRest - JSON Converted in to array is=[{"Description":"GET Request for Liabrary API using ID"},{"RequestType":"POST"},{"ContentType":"application/json"},{"Endpoint":"/Library/GetBook.php"},{"QueryParameters":[{"AuthorName":"wrong_ID"}]}]
+[INFO ] 2020-08-23 11:09:09.959 [main] CommonRest - Array after updating a value is=[{"Description":"GET Request for Liabrary API using ID"},{"RequestType":"POST"},{"ContentType":"application/json"},{"Endpoint":"/Library/GetBook.php"},{"QueryParameters":[{"AuthorName":"wrong_ID"}]}]
+[INFO ] 2020-08-23 11:09:09.959 [main] CommonRest - Array Payload attribute is=[{"Description":"GET Request for Liabrary API using ID"},{"RequestType":"POST"},{"ContentType":"application/json"},{"Endpoint":"/Library/GetBook.php"},{"QueryParameters":[{"AuthorName":"wrong_ID"}]}]
+[INFO ] 2020-08-23 11:09:09.959 [main] CommonRest - Endpoint is=Liabrary_API
+[INFO ] 2020-08-23 11:09:09.960 [main] CommonRest - application/json
+[INFO ] 2020-08-23 11:09:09.960 [main] CommonRest - Endpoint is=/Library/GetBook.php
+[INFO ] 2020-08-23 11:09:09.961 [main] CommonRest - Data in Dictionary is={ReqType=POST, AuthorName=wrong_ID, Content Type=application/json, PAYLOAD=[{"Description":"GET Request for Liabrary API using ID"},{"RequestType":"POST"},{"ContentType":"application/json"},{"Endpoint":"/Library/GetBook.php"},{"QueryParameters":[{"AuthorName":"wrong_ID"}]}], EndPoint=/Library/GetBook.php, ID=T111one111100, Key=qaclick123, place_id=1234}
+[INFO ] 2020-08-23 11:09:09.961 [main] CommonRest - ContentType is=application/json
+[INFO ] 2020-08-23 11:09:09.961 [main] CommonRest - Request Endpoint =POST
+[INFO ] 2020-08-23 11:09:09.961 [main] CommonRest - Request Body is=null
+[INFO ] 2020-08-23 11:09:10.092 [main] CommonRest - Response is=io.restassured.internal.RestAssuredResponseImpl@12c60152
+[INFO ] 2020-08-23 11:09:10.093 [main] CommonRest - Status Code is=404
+[INFO ] 2020-08-23 11:09:10.094 [main] CommonRest - Response Converted in String Format is={"msg":"The book by requested bookid \/ author name does not exists!"}
+[INFO ] 2020-08-23 11:09:10.128 [main] CommonRest - msg Value is=The book by requested bookid / author name does not exists!
+[INFO ] 2020-08-23 11:09:10.128 [main] CommonRest - Value Passed from Featutre File is=The book by requested bookid / author name does not exists!
+[INFO ] 2020-08-23 11:09:10.157 [main] CommonRest - ***************************************Stated Execution of Test Cases****************************************
+[INFO ] 2020-08-23 11:09:10.158 [main] CommonRest - user_payload_endpoint:https://identity-01.intg.fcagcv.com
+[INFO ] 2020-08-23 11:09:10.158 [main] CommonRest - ROSupportOwner_UserAuthToken:Basic NXM1bWQ5NXJ0MzkwNXVtMGw4ZzFrcWs4aWc6NG80bm12ODhhZzJyMDRtYm8xNnJsZGVraGhyZ2l0ZGtuZDd0NzRsYnJwcGt2czN2OWZq
+[INFO ] 2020-08-23 11:09:10.158 [main] CommonRest - Liabrary_API:http://216.10.245.166
+[INFO ] 2020-08-23 11:09:10.159 [main] CommonRest - SelfManage_UserAuthToken:Basic MTM0MWxxa3N1ZmUwbm1vaW9kdnRjc2t2cWI6MWlxZjFsYWw5bjlqcG90ZnFwazNkOTdkcG91ZXFtdXU2bmFtYmE4cGE4amhxb2x0c3M2Yw==
+[INFO ] 2020-08-23 11:09:10.159 [main] CommonRest - Google_API:https://rahulshettyacademy.com
+[INFO ] 2020-08-23 11:09:10.160 [main] CommonRest - JSON Converted in to array is=[{"Description":"Post Request for Google API"},{"RequestType":"POST"},{"ContentType":"application/json"},{"Endpoint":"/maps/api/place/add/json"},{"QueryParameters":[{"Key":"qaclick123"}]},{"Body":{"types":["shoe park","shop"],"website":"http://google.com","address":"29, side layout, cohen 09","name":"Frontline house","accuracy":50,"location":{"lng":33.427362,"lat":-38.383494},"phone_number":"(+91) 983 893 3937","language":"French-IN"}}]
+[INFO ] 2020-08-23 11:09:10.161 [main] CommonRest - Array after updating a value is=[{"Description":"Post Request for Google API"},{"RequestType":"POST"},{"ContentType":"application/json"},{"Endpoint":"/maps/api/place/add/json"},{"QueryParameters":[{"Key":"qaclick123"}]},{"Body":{"types":["shoe park","shop"],"website":"http://google.com","address":"29, side layout, cohen 09","name":"Frontline house","accuracy":50,"location":{"lng":33.427362,"lat":-38.383494},"phone_number":"(+91) 983 893 3937","language":"French-IN"}}]
+[INFO ] 2020-08-23 11:09:10.162 [main] CommonRest - Array Payload attribute is=[{"Description":"Post Request for Google API"},{"RequestType":"POST"},{"ContentType":"application/json"},{"Endpoint":"/maps/api/place/add/json"},{"QueryParameters":[{"Key":"qaclick123"}]},{"Body":{"types":["shoe park","shop"],"website":"http://google.com","address":"29, side layout, cohen 09","name":"Frontline house","accuracy":50,"location":{"lng":33.427362,"lat":-38.383494},"phone_number":"(+91) 983 893 3937","language":"French-IN"}}]
+[INFO ] 2020-08-23 11:09:10.162 [main] CommonRest - Endpoint is=Google_API
+[INFO ] 2020-08-23 11:09:10.163 [main] CommonRest - application/json
+[INFO ] 2020-08-23 11:09:10.163 [main] CommonRest - Endpoint is=/maps/api/place/add/json
+[INFO ] 2020-08-23 11:09:10.165 [main] CommonRest - Data in Dictionary is={ReqType=POST, ReqBody={"types":["shoe park","shop"],"website":"http://google.com","address":"29, side layout, cohen 09","name":"Frontline house","accuracy":50,"location":{"lng":33.427362,"lat":-38.383494},"phone_number":"(+91) 983 893 3937","language":"French-IN"}, AuthorName=wrong_ID, Content Type=application/json, PAYLOAD=[{"Description":"Post Request for Google API"},{"RequestType":"POST"},{"ContentType":"application/json"},{"Endpoint":"/maps/api/place/add/json"},{"QueryParameters":[{"Key":"qaclick123"}]},{"Body":{"types":["shoe park","shop"],"website":"http://google.com","address":"29, side layout, cohen 09","name":"Frontline house","accuracy":50,"location":{"lng":33.427362,"lat":-38.383494},"phone_number":"(+91) 983 893 3937","language":"French-IN"}}], EndPoint=/maps/api/place/add/json, ID=T111one111100, Key=qaclick123, place_id=1234}
+[INFO ] 2020-08-23 11:09:10.165 [main] CommonRest - ContentType is=application/json
+[INFO ] 2020-08-23 11:09:10.165 [main] CommonRest - Request Endpoint =POST
+[INFO ] 2020-08-23 11:09:10.165 [main] CommonRest - Request Body is={"types":["shoe park","shop"],"website":"http://google.com","address":"29, side layout, cohen 09","name":"Frontline house","accuracy":50,"location":{"lng":33.427362,"lat":-38.383494},"phone_number":"(+91) 983 893 3937","language":"French-IN"}
+[INFO ] 2020-08-23 11:09:10.345 [main] CommonRest - Response is=io.restassured.internal.RestAssuredResponseImpl@50756c76
+[INFO ] 2020-08-23 11:09:10.345 [main] CommonRest - Status Code is=200
+[INFO ] 2020-08-23 11:09:10.345 [main] CommonRest - Response Converted in String Format is={"status":"OK","place_id":"112563641b9a84851f8ab7644ffbb9e3","scope":"APP","reference":"d8f01378a2cd1dc722b1ff095882cfa5d8f01378a2cd1dc722b1ff095882cfa5","id":"d8f01378a2cd1dc722b1ff095882cfa5"}
+[INFO ] 2020-08-23 11:09:10.357 [main] CommonRest - status Value is=OK
+[INFO ] 2020-08-23 11:09:10.375 [main] CommonRest - scope Value is=APP
+[INFO ] 2020-08-23 11:09:10.391 [main] CommonRest - ***************************************Stated Execution of Test Cases****************************************
+[INFO ] 2020-08-23 11:09:10.391 [main] CommonRest - user_payload_endpoint:https://identity-01.intg.fcagcv.com
+[INFO ] 2020-08-23 11:09:10.392 [main] CommonRest - ROSupportOwner_UserAuthToken:Basic NXM1bWQ5NXJ0MzkwNXVtMGw4ZzFrcWs4aWc6NG80bm12ODhhZzJyMDRtYm8xNnJsZGVraGhyZ2l0ZGtuZDd0NzRsYnJwcGt2czN2OWZq
+[INFO ] 2020-08-23 11:09:10.392 [main] CommonRest - Liabrary_API:http://216.10.245.166
+[INFO ] 2020-08-23 11:09:10.392 [main] CommonRest - SelfManage_UserAuthToken:Basic MTM0MWxxa3N1ZmUwbm1vaW9kdnRjc2t2cWI6MWlxZjFsYWw5bjlqcG90ZnFwazNkOTdkcG91ZXFtdXU2bmFtYmE4cGE4amhxb2x0c3M2Yw==
+[INFO ] 2020-08-23 11:09:10.392 [main] CommonRest - Google_API:https://rahulshettyacademy.com
+[INFO ] 2020-08-23 11:09:10.393 [main] CommonRest - JSON Converted in to array is=[{"Description":"Post Request for Google API"},{"RequestType":"POST"},{"ContentType":"application/json"},{"Endpoint":"/maps/api/place/add/json"},{"QueryParameters":[{"Key":"qaclick123"}]},{"Body":{"types":["shoe park","shop"],"website":"http://google.com","address":"51, side layout, cohen 09","name":"SB Road","accuracy":50,"location":{"lng":33.427362,"lat":-38.383494},"phone_number":"(+91) 453 333 6666","language":"Australia"}}]
+[INFO ] 2020-08-23 11:09:10.395 [main] CommonRest - Array after updating a value is=[{"Description":"Post Request for Google API"},{"RequestType":"POST"},{"ContentType":"application/json"},{"Endpoint":"/maps/api/place/add/json"},{"QueryParameters":[{"Key":"qaclick123"}]},{"Body":{"types":["shoe park","shop"],"website":"http://google.com","address":"51, side layout, cohen 09","name":"SB Road","accuracy":50,"location":{"lng":33.427362,"lat":-38.383494},"phone_number":"(+91) 453 333 6666","language":"Australia"}}]
+[INFO ] 2020-08-23 11:09:10.396 [main] CommonRest - Array Payload attribute is=[{"Description":"Post Request for Google API"},{"RequestType":"POST"},{"ContentType":"application/json"},{"Endpoint":"/maps/api/place/add/json"},{"QueryParameters":[{"Key":"qaclick123"}]},{"Body":{"types":["shoe park","shop"],"website":"http://google.com","address":"51, side layout, cohen 09","name":"SB Road","accuracy":50,"location":{"lng":33.427362,"lat":-38.383494},"phone_number":"(+91) 453 333 6666","language":"Australia"}}]
+[INFO ] 2020-08-23 11:09:10.396 [main] CommonRest - Endpoint is=Google_API
+[INFO ] 2020-08-23 11:09:10.396 [main] CommonRest - application/json
+[INFO ] 2020-08-23 11:09:10.397 [main] CommonRest - Endpoint is=/maps/api/place/add/json
+[INFO ] 2020-08-23 11:09:10.398 [main] CommonRest - Data in Dictionary is={ReqType=POST, ReqBody={"types":["shoe park","shop"],"website":"http://google.com","address":"51, side layout, cohen 09","name":"SB Road","accuracy":50,"location":{"lng":33.427362,"lat":-38.383494},"phone_number":"(+91) 453 333 6666","language":"Australia"}, AuthorName=wrong_ID, Content Type=application/json, PAYLOAD=[{"Description":"Post Request for Google API"},{"RequestType":"POST"},{"ContentType":"application/json"},{"Endpoint":"/maps/api/place/add/json"},{"QueryParameters":[{"Key":"qaclick123"}]},{"Body":{"types":["shoe park","shop"],"website":"http://google.com","address":"51, side layout, cohen 09","name":"SB Road","accuracy":50,"location":{"lng":33.427362,"lat":-38.383494},"phone_number":"(+91) 453 333 6666","language":"Australia"}}], EndPoint=/maps/api/place/add/json, ID=T111one111100, Key=qaclick123, place_id=1234}
+[INFO ] 2020-08-23 11:09:10.398 [main] CommonRest - ContentType is=application/json
+[INFO ] 2020-08-23 11:09:10.398 [main] CommonRest - Request Endpoint =POST
+[INFO ] 2020-08-23 11:09:10.398 [main] CommonRest - Request Body is={"types":["shoe park","shop"],"website":"http://google.com","address":"51, side layout, cohen 09","name":"SB Road","accuracy":50,"location":{"lng":33.427362,"lat":-38.383494},"phone_number":"(+91) 453 333 6666","language":"Australia"}
+[INFO ] 2020-08-23 11:09:10.531 [main] CommonRest - Response is=io.restassured.internal.RestAssuredResponseImpl@cf518cf
+[INFO ] 2020-08-23 11:09:10.531 [main] CommonRest - Status Code is=200
+[INFO ] 2020-08-23 11:09:10.532 [main] CommonRest - Response Converted in String Format is={"status":"OK","place_id":"b762e06676f3b0512498c6c7b1ec1b13","scope":"APP","reference":"b144d8856ceae5a4a801103ba8015118b144d8856ceae5a4a801103ba8015118","id":"b144d8856ceae5a4a801103ba8015118"}
+[INFO ] 2020-08-23 11:09:10.545 [main] CommonRest - status Value is=OK
+[INFO ] 2020-08-23 11:09:10.568 [main] CommonRest - scope Value is=APP
+[INFO ] 2020-08-23 11:09:10.589 [main] CommonRest - ***************************************Stated Execution of Test Cases****************************************
+[INFO ] 2020-08-23 11:09:10.590 [main] CommonRest - user_payload_endpoint:https://identity-01.intg.fcagcv.com
+[INFO ] 2020-08-23 11:09:10.590 [main] CommonRest - ROSupportOwner_UserAuthToken:Basic NXM1bWQ5NXJ0MzkwNXVtMGw4ZzFrcWs4aWc6NG80bm12ODhhZzJyMDRtYm8xNnJsZGVraGhyZ2l0ZGtuZDd0NzRsYnJwcGt2czN2OWZq
+[INFO ] 2020-08-23 11:09:10.591 [main] CommonRest - Liabrary_API:http://216.10.245.166
+[INFO ] 2020-08-23 11:09:10.591 [main] CommonRest - SelfManage_UserAuthToken:Basic MTM0MWxxa3N1ZmUwbm1vaW9kdnRjc2t2cWI6MWlxZjFsYWw5bjlqcG90ZnFwazNkOTdkcG91ZXFtdXU2bmFtYmE4cGE4amhxb2x0c3M2Yw==
+[INFO ] 2020-08-23 11:09:10.591 [main] CommonRest - Google_API:https://rahulshettyacademy.com
+[INFO ] 2020-08-23 11:09:10.593 [main] CommonRest - JSON Converted in to array is=[{"Description":"Post Request for Google API"},{"RequestType":"POST"},{"ContentType":"application/json"},{"Endpoint":"/maps/api/place/add/json"},{"QueryParameters":[{"Key":"qaclick123"}]},{"Body":{"types":["shoe park","shop"],"website":"http://google.com","address":"51, side layout, cohen 09","name":"SB Road","accuracy":50,"location":{"lng":33.427362,"lat":-38.383494},"phone_number":"(+91) 453 333 6666","language":"Australia"}}]
+[INFO ] 2020-08-23 11:09:10.595 [main] CommonRest - Array after updating a value is=[{"Description":"Post Request for Google API"},{"RequestType":"POST"},{"ContentType":"application/json"},{"Endpoint":"/maps/api/place/add/json"},{"QueryParameters":[{"Key":"qaclick123"}]},{"Body":{"types":["shoe park","shop"],"website":"http://google.com","address":"51, side layout, cohen 09","name":"SB Road","accuracy":50,"location":{"lng":33.427362,"lat":-38.383494},"phone_number":"(+91) 453 333 6666","language":"Australia"}}]
+[INFO ] 2020-08-23 11:09:10.596 [main] CommonRest - Array Payload attribute is=[{"Description":"Post Request for Google API"},{"RequestType":"POST"},{"ContentType":"application/json"},{"Endpoint":"/maps/api/place/add/json"},{"QueryParameters":[{"Key":"qaclick123"}]},{"Body":{"types":["shoe park","shop"],"website":"http://google.com","address":"51, side layout, cohen 09","name":"SB Road","accuracy":50,"location":{"lng":33.427362,"lat":-38.383494},"phone_number":"(+91) 453 333 6666","language":"Australia"}}]
+[INFO ] 2020-08-23 11:09:10.597 [main] CommonRest - Endpoint is=Google_API
+[INFO ] 2020-08-23 11:09:10.597 [main] CommonRest - application/json
+[INFO ] 2020-08-23 11:09:10.598 [main] CommonRest - Endpoint is=/maps/api/place/add/json
+[INFO ] 2020-08-23 11:09:10.598 [main] CommonRest - Data in Dictionary is={ReqType=POST, ReqBody={"types":["shoe park","shop"],"website":"http://google.com","address":"51, side layout, cohen 09","name":"SB Road","accuracy":50,"location":{"lng":33.427362,"lat":-38.383494},"phone_number":"(+91) 453 333 6666","language":"Australia"}, AuthorName=wrong_ID, Content Type=application/json, PAYLOAD=[{"Description":"Post Request for Google API"},{"RequestType":"POST"},{"ContentType":"application/json"},{"Endpoint":"/maps/api/place/add/json"},{"QueryParameters":[{"Key":"qaclick123"}]},{"Body":{"types":["shoe park","shop"],"website":"http://google.com","address":"51, side layout, cohen 09","name":"SB Road","accuracy":50,"location":{"lng":33.427362,"lat":-38.383494},"phone_number":"(+91) 453 333 6666","language":"Australia"}}], EndPoint=/maps/api/place/add/json, ID=T111one111100, Key=qaclick123, place_id=1234}
+[INFO ] 2020-08-23 11:09:10.599 [main] CommonRest - ContentType is=application/json
+[INFO ] 2020-08-23 11:09:10.599 [main] CommonRest - Request Endpoint =POST
+[INFO ] 2020-08-23 11:09:10.599 [main] CommonRest - Request Body is={"types":["shoe park","shop"],"website":"http://google.com","address":"51, side layout, cohen 09","name":"SB Road","accuracy":50,"location":{"lng":33.427362,"lat":-38.383494},"phone_number":"(+91) 453 333 6666","language":"Australia"}
+[INFO ] 2020-08-23 11:09:10.725 [main] CommonRest - Response is=io.restassured.internal.RestAssuredResponseImpl@1e469dfd
+[INFO ] 2020-08-23 11:09:10.726 [main] CommonRest - Status Code is=200
+[INFO ] 2020-08-23 11:09:10.726 [main] CommonRest - Response Converted in String Format is={"status":"OK","place_id":"31af65179c950042325c82bd8d56cede","scope":"APP","reference":"ce6ffde7ce8209f78e10e5472c660a61ce6ffde7ce8209f78e10e5472c660a61","id":"ce6ffde7ce8209f78e10e5472c660a61"}
+[INFO ] 2020-08-23 11:09:10.747 [main] CommonRest - status Value is=OK
+[INFO ] 2020-08-23 11:09:10.761 [main] CommonRest - scope Value is=APP
+[INFO ] 2020-08-23 11:09:10.772 [main] CommonRest - ***************************************Stated Execution of Test Cases****************************************
+[INFO ] 2020-08-23 11:09:10.773 [main] CommonRest - user_payload_endpoint:https://identity-01.intg.fcagcv.com
+[INFO ] 2020-08-23 11:09:10.773 [main] CommonRest - ROSupportOwner_UserAuthToken:Basic NXM1bWQ5NXJ0MzkwNXVtMGw4ZzFrcWs4aWc6NG80bm12ODhhZzJyMDRtYm8xNnJsZGVraGhyZ2l0ZGtuZDd0NzRsYnJwcGt2czN2OWZq
+[INFO ] 2020-08-23 11:09:10.773 [main] CommonRest - Liabrary_API:http://216.10.245.166
+[INFO ] 2020-08-23 11:09:10.773 [main] CommonRest - SelfManage_UserAuthToken:Basic MTM0MWxxa3N1ZmUwbm1vaW9kdnRjc2t2cWI6MWlxZjFsYWw5bjlqcG90ZnFwazNkOTdkcG91ZXFtdXU2bmFtYmE4cGE4amhxb2x0c3M2Yw==
+[INFO ] 2020-08-23 11:09:10.773 [main] CommonRest - Google_API:https://rahulshettyacademy.com
+[INFO ] 2020-08-23 11:09:10.774 [main] CommonRest - JSON Converted in to array is=[{"Description":"Post Request for Liabrary API"},{"RequestType":"POST"},{"ContentType":"application/json"},{"Endpoint":"/Library/Addbook.php"},{"Body":{"author":"Test_Two","isbn":"isbn_two","name":"Book_Two","aisle":"102"}}]
+[INFO ] 2020-08-23 11:09:10.775 [main] CommonRest - Array after updating a value is=[{"Description":"Post Request for Liabrary API"},{"RequestType":"POST"},{"ContentType":"application/json"},{"Endpoint":"/Library/Addbook.php"},{"Body":{"author":"Test_Two","isbn":"isbn_two","name":"Book_Two","aisle":"102"}}]
+[INFO ] 2020-08-23 11:09:10.775 [main] CommonRest - Array Payload attribute is=[{"Description":"Post Request for Liabrary API"},{"RequestType":"POST"},{"ContentType":"application/json"},{"Endpoint":"/Library/Addbook.php"},{"Body":{"author":"Test_Two","isbn":"isbn_two","name":"Book_Two","aisle":"102"}}]
+[INFO ] 2020-08-23 11:09:10.775 [main] CommonRest - Endpoint is=Liabrary_API
+[INFO ] 2020-08-23 11:09:10.775 [main] CommonRest - application/json
+[INFO ] 2020-08-23 11:09:10.776 [main] CommonRest - Endpoint is=/Library/Addbook.php
+[INFO ] 2020-08-23 11:09:10.776 [main] CommonRest - Data in Dictionary is={ReqType=POST, ReqBody={"author":"Test_Two","isbn":"isbn_two","name":"Book_Two","aisle":"102"}, AuthorName=wrong_ID, Content Type=application/json, PAYLOAD=[{"Description":"Post Request for Liabrary API"},{"RequestType":"POST"},{"ContentType":"application/json"},{"Endpoint":"/Library/Addbook.php"},{"Body":{"author":"Test_Two","isbn":"isbn_two","name":"Book_Two","aisle":"102"}}], EndPoint=/Library/Addbook.php, ID=T111one111100, Key=qaclick123, place_id=1234}
+[INFO ] 2020-08-23 11:09:10.776 [main] CommonRest - ContentType is=application/json
+[INFO ] 2020-08-23 11:09:10.776 [main] CommonRest - Request Endpoint =POST
+[INFO ] 2020-08-23 11:09:10.776 [main] CommonRest - Request Body is={"author":"Test_Two","isbn":"isbn_two","name":"Book_Two","aisle":"102"}
+[INFO ] 2020-08-23 11:09:10.886 [main] CommonRest - Response is=io.restassured.internal.RestAssuredResponseImpl@7a0ef219
+[INFO ] 2020-08-23 11:09:10.886 [main] CommonRest - Status Code is=404
+[INFO ] 2020-08-23 11:09:10.899 [main] CommonRest - ***************************************Stated Execution of Test Cases****************************************
+[INFO ] 2020-08-23 11:09:10.900 [main] CommonRest - user_payload_endpoint:https://identity-01.intg.fcagcv.com
+[INFO ] 2020-08-23 11:09:10.903 [main] CommonRest - ROSupportOwner_UserAuthToken:Basic NXM1bWQ5NXJ0MzkwNXVtMGw4ZzFrcWs4aWc6NG80bm12ODhhZzJyMDRtYm8xNnJsZGVraGhyZ2l0ZGtuZDd0NzRsYnJwcGt2czN2OWZq
+[INFO ] 2020-08-23 11:09:10.903 [main] CommonRest - Liabrary_API:http://216.10.245.166
+[INFO ] 2020-08-23 11:09:10.904 [main] CommonRest - SelfManage_UserAuthToken:Basic MTM0MWxxa3N1ZmUwbm1vaW9kdnRjc2t2cWI6MWlxZjFsYWw5bjlqcG90ZnFwazNkOTdkcG91ZXFtdXU2bmFtYmE4cGE4amhxb2x0c3M2Yw==
+[INFO ] 2020-08-23 11:09:10.904 [main] CommonRest - Google_API:https://rahulshettyacademy.com
+[INFO ] 2020-08-23 11:09:10.904 [main] CommonRest - JSON Converted in to array is=[{"Description":"Post Request for Liabrary API"},{"RequestType":"POST"},{"ContentType":"application/json"},{"Endpoint":"/Library/Addbook.php"},{"Body":{"author":"TestOne","isbn":"Tone","name":"TestOne","aisle":"100"}}]
+[INFO ] 2020-08-23 11:09:10.905 [main] CommonRest - Array after updating a value is=[{"Description":"Post Request for Liabrary API"},{"RequestType":"POST"},{"ContentType":"application/json"},{"Endpoint":"/Library/Addbook.php"},{"Body":{"author":"TestOne","isbn":"Tone","name":"TestOne","aisle":"100"}}]
+[INFO ] 2020-08-23 11:09:10.905 [main] CommonRest - Array Payload attribute is=[{"Description":"Post Request for Liabrary API"},{"RequestType":"POST"},{"ContentType":"application/json"},{"Endpoint":"/Library/Addbook.php"},{"Body":{"author":"TestOne","isbn":"Tone","name":"TestOne","aisle":"100"}}]
+[INFO ] 2020-08-23 11:09:10.905 [main] CommonRest - Endpoint is=Liabrary_API
+[INFO ] 2020-08-23 11:09:10.906 [main] CommonRest - application/json
+[INFO ] 2020-08-23 11:09:10.908 [main] CommonRest - Endpoint is=/Library/Addbook.php
+[INFO ] 2020-08-23 11:09:10.908 [main] CommonRest - Data in Dictionary is={ReqType=POST, ReqBody={"author":"TestOne","isbn":"Tone","name":"TestOne","aisle":"100"}, AuthorName=wrong_ID, Content Type=application/json, PAYLOAD=[{"Description":"Post Request for Liabrary API"},{"RequestType":"POST"},{"ContentType":"application/json"},{"Endpoint":"/Library/Addbook.php"},{"Body":{"author":"TestOne","isbn":"Tone","name":"TestOne","aisle":"100"}}], EndPoint=/Library/Addbook.php, ID=T111one111100, Key=qaclick123, place_id=1234}
+[INFO ] 2020-08-23 11:09:10.910 [main] CommonRest - ContentType is=application/json
+[INFO ] 2020-08-23 11:09:10.910 [main] CommonRest - Request Endpoint =POST
+[INFO ] 2020-08-23 11:09:10.910 [main] CommonRest - Request Body is={"author":"TestOne","isbn":"Tone","name":"TestOne","aisle":"100"}
+[INFO ] 2020-08-23 11:09:11.026 [main] CommonRest - Response is=io.restassured.internal.RestAssuredResponseImpl@7f353d99
+[INFO ] 2020-08-23 11:09:11.026 [main] CommonRest - Status Code is=404
+[INFO ] 2020-08-23 11:09:11.027 [main] CommonRest - Response Converted in String Format is={"msg":"Add Book operation failed, looks like the book already exists"}
+[INFO ] 2020-08-23 11:09:11.041 [main] CommonRest - msg Value is=Add Book operation failed, looks like the book already exists
+[INFO ] 2020-08-23 11:09:11.042 [main] CommonRest - Value Passed from Featutre File is=Add Book operation failed, looks like the book already exists
+[INFO ] 2020-08-23 11:09:11.063 [main] CommonRest - ***************************************Stated Execution of Test Cases****************************************
+[INFO ] 2020-08-23 11:09:11.064 [main] CommonRest - user_payload_endpoint:https://identity-01.intg.fcagcv.com
+[INFO ] 2020-08-23 11:09:11.064 [main] CommonRest - ROSupportOwner_UserAuthToken:Basic NXM1bWQ5NXJ0MzkwNXVtMGw4ZzFrcWs4aWc6NG80bm12ODhhZzJyMDRtYm8xNnJsZGVraGhyZ2l0ZGtuZDd0NzRsYnJwcGt2czN2OWZq
+[INFO ] 2020-08-23 11:09:11.064 [main] CommonRest - Liabrary_API:http://216.10.245.166
+[INFO ] 2020-08-23 11:09:11.064 [main] CommonRest - SelfManage_UserAuthToken:Basic MTM0MWxxa3N1ZmUwbm1vaW9kdnRjc2t2cWI6MWlxZjFsYWw5bjlqcG90ZnFwazNkOTdkcG91ZXFtdXU2bmFtYmE4cGE4amhxb2x0c3M2Yw==
+[INFO ] 2020-08-23 11:09:11.064 [main] CommonRest - Google_API:https://rahulshettyacademy.com
+[INFO ] 2020-08-23 11:09:11.065 [main] CommonRest - JSON Converted in to array is=[{"Description":"Post Request for Google API"},{"RequestType":"PUT"},{"ContentType":"application/json"},{"Endpoint":"/maps/api/place/update/json"},{"QueryParameters":[{"Key":"qaclick123"}]},{"Body":{"address":"Test123","place_id":"3cbb9aa3b4fcc62cb60991dfa412c5bd","key":"qaclick123"}}]
+[INFO ] 2020-08-23 11:09:11.065 [main] CommonRest - Array after updating a value is=[{"Description":"Post Request for Google API"},{"RequestType":"PUT"},{"ContentType":"application/json"},{"Endpoint":"/maps/api/place/update/json"},{"QueryParameters":[{"Key":"qaclick123"}]},{"Body":{"address":"Test123","place_id":"3cbb9aa3b4fcc62cb60991dfa412c5bd","key":"qaclick123"}}]
+[INFO ] 2020-08-23 11:09:11.065 [main] CommonRest - Array Payload attribute is=[{"Description":"Post Request for Google API"},{"RequestType":"PUT"},{"ContentType":"application/json"},{"Endpoint":"/maps/api/place/update/json"},{"QueryParameters":[{"Key":"qaclick123"}]},{"Body":{"address":"Test123","place_id":"3cbb9aa3b4fcc62cb60991dfa412c5bd","key":"qaclick123"}}]
+[INFO ] 2020-08-23 11:09:11.065 [main] CommonRest - Endpoint is=Google_API
+[INFO ] 2020-08-23 11:09:11.066 [main] CommonRest - application/json
+[INFO ] 2020-08-23 11:09:11.068 [main] CommonRest - Endpoint is=/maps/api/place/update/json
+[INFO ] 2020-08-23 11:09:11.068 [main] CommonRest - Data in Dictionary is={ReqType=PUT, ReqBody={"address":"Test123","place_id":"3cbb9aa3b4fcc62cb60991dfa412c5bd","key":"qaclick123"}, AuthorName=wrong_ID, Content Type=application/json, PAYLOAD=[{"Description":"Post Request for Google API"},{"RequestType":"PUT"},{"ContentType":"application/json"},{"Endpoint":"/maps/api/place/update/json"},{"QueryParameters":[{"Key":"qaclick123"}]},{"Body":{"address":"Test123","place_id":"3cbb9aa3b4fcc62cb60991dfa412c5bd","key":"qaclick123"}}], EndPoint=/maps/api/place/update/json, ID=T111one111100, Key=qaclick123, place_id=1234}
+[INFO ] 2020-08-23 11:09:11.068 [main] CommonRest - ContentType is=application/json
+[INFO ] 2020-08-23 11:09:11.068 [main] CommonRest - Request Endpoint =PUT
+[INFO ] 2020-08-23 11:09:11.068 [main] CommonRest - Request Body is={"address":"Test123","place_id":"3cbb9aa3b4fcc62cb60991dfa412c5bd","key":"qaclick123"}
+[INFO ] 2020-08-23 11:09:12.697 [main] CommonRest - Response is=io.restassured.internal.RestAssuredResponseImpl@52d97ab6
+[INFO ] 2020-08-23 11:09:12.698 [main] CommonRest - Status Code is=404
+[INFO ] 2020-08-23 11:09:12.709 [main] CommonRest - ***************************************Stated Execution of Test Cases****************************************
+[INFO ] 2020-08-23 11:09:12.710 [main] CommonRest - user_payload_endpoint:https://identity-01.intg.fcagcv.com
+[INFO ] 2020-08-23 11:09:12.710 [main] CommonRest - ROSupportOwner_UserAuthToken:Basic NXM1bWQ5NXJ0MzkwNXVtMGw4ZzFrcWs4aWc6NG80bm12ODhhZzJyMDRtYm8xNnJsZGVraGhyZ2l0ZGtuZDd0NzRsYnJwcGt2czN2OWZq
+[INFO ] 2020-08-23 11:09:12.710 [main] CommonRest - Liabrary_API:http://216.10.245.166
+[INFO ] 2020-08-23 11:09:12.711 [main] CommonRest - SelfManage_UserAuthToken:Basic MTM0MWxxa3N1ZmUwbm1vaW9kdnRjc2t2cWI6MWlxZjFsYWw5bjlqcG90ZnFwazNkOTdkcG91ZXFtdXU2bmFtYmE4cGE4amhxb2x0c3M2Yw==
+[INFO ] 2020-08-23 11:09:12.711 [main] CommonRest - Google_API:https://rahulshettyacademy.com
+[INFO ] 2020-08-23 11:09:12.711 [main] CommonRest - JSON Converted in to array is=[{"Description":"Post Request for Google API"},{"RequestType":"PUT"},{"ContentType":"application/json"},{"Endpoint":"/maps/api/place/update/json"},{"QueryParameters":[{"Key":"qaclick123"}]},{"Body":{"address":"Test123","place_id":"1234","key":"qaclick123"}}]
+[INFO ] 2020-08-23 11:09:12.712 [main] CommonRest - Array after updating a value is=[{"Description":"Post Request for Google API"},{"RequestType":"PUT"},{"ContentType":"application/json"},{"Endpoint":"/maps/api/place/update/json"},{"QueryParameters":[{"Key":"qaclick123"}]},{"Body":{"address":"Test123","place_id":"1234","key":"qaclick123"}}]
+[INFO ] 2020-08-23 11:09:12.712 [main] CommonRest - Array Payload attribute is=[{"Description":"Post Request for Google API"},{"RequestType":"PUT"},{"ContentType":"application/json"},{"Endpoint":"/maps/api/place/update/json"},{"QueryParameters":[{"Key":"qaclick123"}]},{"Body":{"address":"Test123","place_id":"1234","key":"qaclick123"}}]
+[INFO ] 2020-08-23 11:09:12.712 [main] CommonRest - Endpoint is=Google_API
+[INFO ] 2020-08-23 11:09:12.713 [main] CommonRest - application/json
+[INFO ] 2020-08-23 11:09:12.713 [main] CommonRest - Endpoint is=/maps/api/place/update/json
+[INFO ] 2020-08-23 11:09:12.713 [main] CommonRest - Data in Dictionary is={ReqType=PUT, ReqBody={"address":"Test123","place_id":"1234","key":"qaclick123"}, AuthorName=wrong_ID, Content Type=application/json, PAYLOAD=[{"Description":"Post Request for Google API"},{"RequestType":"PUT"},{"ContentType":"application/json"},{"Endpoint":"/maps/api/place/update/json"},{"QueryParameters":[{"Key":"qaclick123"}]},{"Body":{"address":"Test123","place_id":"1234","key":"qaclick123"}}], EndPoint=/maps/api/place/update/json, ID=T111one111100, Key=qaclick123, place_id=1234}
+[INFO ] 2020-08-23 11:09:12.714 [main] CommonRest - ContentType is=application/json
+[INFO ] 2020-08-23 11:09:12.714 [main] CommonRest - Request Endpoint =PUT
+[INFO ] 2020-08-23 11:09:12.715 [main] CommonRest - Request Body is={"address":"Test123","place_id":"1234","key":"qaclick123"}
+[INFO ] 2020-08-23 11:09:14.329 [main] CommonRest - Response is=io.restassured.internal.RestAssuredResponseImpl@20ab3e3a
+[INFO ] 2020-08-23 11:09:14.329 [main] CommonRest - Status Code is=404
+[INFO ] 2020-08-23 11:09:14.329 [main] CommonRest - Response Converted in String Format is={"msg":"Update address operation failed, looks like the data doesn't exists"}
+[INFO ] 2020-08-23 11:09:14.337 [main] CommonRest - msg Value is=Update address operation failed, looks like the data doesn't exists
+[INFO ] 2020-08-23 11:09:14.337 [main] CommonRest - Value Passed from Featutre File is=Update address operation failed, looks like the data doesn't exists

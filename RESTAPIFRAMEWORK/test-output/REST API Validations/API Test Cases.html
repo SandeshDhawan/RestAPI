@@ -1,0 +1,203 @@
+<html>
+<head>
+<title>TestNG:  API Test Cases</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>API Test Cases</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>10/3/0</td>
+</tr><tr>
+<td>Started on:</td><td>Sun Aug 23 11:09:04 IST 2020</td>
+</tr>
+<tr><td>Total time:</td><td>10 seconds (10293 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='cucumberOptions.TestRunner.runScenario()'><b>runScenario</b><br>Test class: cucumberOptions.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify error message is displayed for wrong place id", "Optional[Test Cases for GET Google API]"</td>
+<td><div><pre>java.lang.AssertionError: expected:&lt;404&gt; but was:&lt;200&gt;
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.failNotEquals(Assert.java:835)
+	at org.junit.Assert.assertEquals(Assert.java:647)
+	at org.junit.Assert.assertEquals(Assert.java:633)
+	at utility.CommonRest.verifyStatusCode(CommonRest.java:257)
+	at StepDefinations.Common_Step_definations.verifyStatusCode(Common_Step_definations.java:41)
+	at ?.status code 404 should be displayed(file:///C:/Users/sdhawan/API_Project/RESTAPIFRAMEWORK/src/test/java/Postman_TestCases/Postman_GET_Google_API.feature:17)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1746590863", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1746590863'><pre>java.lang.AssertionError: expected:&lt;404&gt; but was:&lt;200&gt;
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.failNotEquals(Assert.java:835)
+	at org.junit.Assert.assertEquals(Assert.java:647)
+	at org.junit.Assert.assertEquals(Assert.java:633)
+	at utility.CommonRest.verifyStatusCode(CommonRest.java:257)
+	at StepDefinations.Common_Step_definations.verifyStatusCode(Common_Step_definations.java:41)
+	at ?.status code 404 should be displayed(file:///C:/Users/sdhawan/API_Project/RESTAPIFRAMEWORK/src/test/java/Postman_TestCases/Postman_GET_Google_API.feature:17)
+</pre></div></td>
+<td>0</td>
+<td>cucumberOptions.TestRunner@3b6eb2ec</td></tr>
+<tr>
+<td title='cucumberOptions.TestRunner.runScenario()'><b>runScenario</b><br>Test class: cucumberOptions.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify user is able to add a book successfully", "Optional[Test Cases for POST Liabrary API]"</td>
+<td><div><pre>java.lang.AssertionError: expected:&lt;200&gt; but was:&lt;404&gt;
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.failNotEquals(Assert.java:835)
+	at org.junit.Assert.assertEquals(Assert.java:647)
+	at org.junit.Assert.assertEquals(Assert.java:633)
+	at utility.CommonRest.verifyStatusCode(CommonRest.java:257)
+	at StepDefinations.Common_Step_definations.verifyStatusCode(Common_Step_definations.java:41)
+	at ?.status code 200 should be displayed(file:///C:/Users/sdhawan/API_Project/RESTAPIFRAMEWORK/src/test/java/Postman_TestCases/Postman_POST_Liabrary_API.feature:7)
+</pre></div><a href='#' onClick='toggleBox("stack-trace2061316668", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2061316668'><pre>java.lang.AssertionError: expected:&lt;200&gt; but was:&lt;404&gt;
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.failNotEquals(Assert.java:835)
+	at org.junit.Assert.assertEquals(Assert.java:647)
+	at org.junit.Assert.assertEquals(Assert.java:633)
+	at utility.CommonRest.verifyStatusCode(CommonRest.java:257)
+	at StepDefinations.Common_Step_definations.verifyStatusCode(Common_Step_definations.java:41)
+	at ?.status code 200 should be displayed(file:///C:/Users/sdhawan/API_Project/RESTAPIFRAMEWORK/src/test/java/Postman_TestCases/Postman_POST_Liabrary_API.feature:7)
+</pre></div></td>
+<td>0</td>
+<td>cucumberOptions.TestRunner@3b6eb2ec</td></tr>
+<tr>
+<td title='cucumberOptions.TestRunner.runScenario()'><b>runScenario</b><br>Test class: cucumberOptions.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify Positive Scenario Successfull for PUT Request", "Optional[Test Cases for PUT Google API]"</td>
+<td><div><pre>java.lang.AssertionError: expected:&lt;200&gt; but was:&lt;404&gt;
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.failNotEquals(Assert.java:835)
+	at org.junit.Assert.assertEquals(Assert.java:647)
+	at org.junit.Assert.assertEquals(Assert.java:633)
+	at utility.CommonRest.verifyStatusCode(CommonRest.java:257)
+	at StepDefinations.Common_Step_definations.verifyStatusCode(Common_Step_definations.java:41)
+	at ?.status code 200 should be displayed(file:///C:/Users/sdhawan/API_Project/RESTAPIFRAMEWORK/src/test/java/Postman_TestCases/Postman_PUT_Google_API.feature:7)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1583020257", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1583020257'><pre>java.lang.AssertionError: expected:&lt;200&gt; but was:&lt;404&gt;
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.failNotEquals(Assert.java:835)
+	at org.junit.Assert.assertEquals(Assert.java:647)
+	at org.junit.Assert.assertEquals(Assert.java:633)
+	at utility.CommonRest.verifyStatusCode(CommonRest.java:257)
+	at StepDefinations.Common_Step_definations.verifyStatusCode(Common_Step_definations.java:41)
+	at ?.status code 200 should be displayed(file:///C:/Users/sdhawan/API_Project/RESTAPIFRAMEWORK/src/test/java/Postman_TestCases/Postman_PUT_Google_API.feature:7)
+</pre></div></td>
+<td>1</td>
+<td>cucumberOptions.TestRunner@3b6eb2ec</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='cucumberOptions.TestRunner.runScenario()'><b>runScenario</b><br>Test class: cucumberOptions.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify Positive Scenario Successfull for GET Request", "Optional[Test Cases for GET Google API]"</td>
+<td></td>
+<td>3</td>
+<td>cucumberOptions.TestRunner@3b6eb2ec</td></tr>
+<tr>
+<td title='cucumberOptions.TestRunner.runScenario()'><b>runScenario</b><br>Test class: cucumberOptions.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify user is able get a book details by author name", "Optional[Test Cases for POST Liabrary API]"</td>
+<td></td>
+<td>0</td>
+<td>cucumberOptions.TestRunner@3b6eb2ec</td></tr>
+<tr>
+<td title='cucumberOptions.TestRunner.runScenario()'><b>runScenario</b><br>Test class: cucumberOptions.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify book details is not diaplyed for wrong author name", "Optional[Test Cases for POST Liabrary API]"</td>
+<td></td>
+<td>0</td>
+<td>cucumberOptions.TestRunner@3b6eb2ec</td></tr>
+<tr>
+<td title='cucumberOptions.TestRunner.runScenario()'><b>runScenario</b><br>Test class: cucumberOptions.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify user is able get a book details by ID", "Optional[Test Cases for POST Liabrary API]"</td>
+<td></td>
+<td>0</td>
+<td>cucumberOptions.TestRunner@3b6eb2ec</td></tr>
+<tr>
+<td title='cucumberOptions.TestRunner.runScenario()'><b>runScenario</b><br>Test class: cucumberOptions.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify book details is not diaplyed for wrong ID", "Optional[Test Cases for POST Liabrary API]"</td>
+<td></td>
+<td>0</td>
+<td>cucumberOptions.TestRunner@3b6eb2ec</td></tr>
+<tr>
+<td title='cucumberOptions.TestRunner.runScenario()'><b>runScenario</b><br>Test class: cucumberOptions.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify Positive Scenario Successfull for POST Request", "Optional[Test Cases for POST Google API]"</td>
+<td></td>
+<td>0</td>
+<td>cucumberOptions.TestRunner@3b6eb2ec</td></tr>
+<tr>
+<td title='cucumberOptions.TestRunner.runScenario()'><b>runScenario</b><br>Test class: cucumberOptions.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify Positive Scenario Successfull for POST Request", "Optional[Test Cases for POST Google API]"</td>
+<td></td>
+<td>0</td>
+<td>cucumberOptions.TestRunner@3b6eb2ec</td></tr>
+<tr>
+<td title='cucumberOptions.TestRunner.runScenario()'><b>runScenario</b><br>Test class: cucumberOptions.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify Positive Scenario Successfull for POST Request", "Optional[Test Cases for POST Google API]"</td>
+<td></td>
+<td>0</td>
+<td>cucumberOptions.TestRunner@3b6eb2ec</td></tr>
+<tr>
+<td title='cucumberOptions.TestRunner.runScenario()'><b>runScenario</b><br>Test class: cucumberOptions.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify error message is displayed if book is alrady present", "Optional[Test Cases for POST Liabrary API]"</td>
+<td></td>
+<td>0</td>
+<td>cucumberOptions.TestRunner@3b6eb2ec</td></tr>
+<tr>
+<td title='cucumberOptions.TestRunner.runScenario()'><b>runScenario</b><br>Test class: cucumberOptions.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify erroe message for wrong place id", "Optional[Test Cases for PUT Google API]"</td>
+<td></td>
+<td>1</td>
+<td>cucumberOptions.TestRunner@3b6eb2ec</td></tr>
+</table><p>
+</body>
+</html>

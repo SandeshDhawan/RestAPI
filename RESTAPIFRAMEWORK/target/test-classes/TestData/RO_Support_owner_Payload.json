@@ -1,0 +1,51 @@
+{"Payload": [
+		{"PayloadId_001": [
+				{"Description": "Get User Auth Token Request for Scope RO Support Owner"},
+				{"RequestType": "POST"},
+				{"ContentType": "x-www-form-urlencoded"},
+				{"Endpoint": "/v2/ignite/oauth2/token"},
+				{"Headers": [{"authorization": "<ROSupportOwner_UserAuthToken>"}]},
+				{"Parameters": [
+						{"grant_type": "client_credentials"},
+						{"client_id": "5s5md95rt3905um0l8g1kqk8ig"},
+						{"scope":"fcagsdp.harman.com/ROSupportOwner"}
+					]}
+			]},
+			{"PayloadId_002": [
+				{"Description": "Get User Auth Token Request for Scope RO Support Owner with Wrong Grant Type"},
+				{"RequestType": "POST"},
+				{"ContentType": "x-www-form-urlencoded"},
+				{"Endpoint": "/v2/ignite/oauth2/token"},
+				{"Headers": [{"authorization": "<ROSupportOwner_UserAuthToken>"}]},
+				{"Parameters": [
+						{"grant_type": "Test"},
+						{"client_id": "5s5md95rt3905um0l8g1kqk8ig"},
+						{"scope":"fcagsdp.harman.com/ROSupportOwner"}
+					]}
+			]},
+			
+			{"PayloadId_003": [
+				{"Description": "Get User Auth Token Request for Scope RO Support Owner without Grant Type"},
+				{"RequestType": "POST"},
+				{"ContentType": "x-www-form-urlencoded"},
+				{"Endpoint": "/v2/ignite/oauth2/token"},
+				{"Headers": [{"authorization": "<ROSupportOwner_UserAuthToken>"}]},
+				{"Parameters": [
+						{"client_id": "5s5md95rt3905um0l8g1kqk8ig"},
+						{"scope":"fcagsdp.harman.com/ROSupportOwner"}
+					]}
+			]},
+			{"PayloadId_004": [
+				{"Description": "Get User Auth Token Request for Scope RO Support Owner with wrong Scope"},
+				{"RequestType": "POST"},
+				{"ContentType": "x-www-form-urlencoded"},
+				{"Endpoint": "/v2/ignite/oauth2/token"},
+				{"Headers": [{"authorization": "<ROSupportOwner_UserAuthToken>"}]},
+				{"Parameters": [
+						{"grant_type": "client_credentials"},
+						{"client_id": "5s5md95rt3905um0l8g1kqk8ig"},
+						{"scope":"Test"}
+					]}
+			]}
+			
+]}

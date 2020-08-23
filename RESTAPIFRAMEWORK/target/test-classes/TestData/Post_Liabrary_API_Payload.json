@@ -1,0 +1,36 @@
+{
+	"Payload": [
+	{
+		"PayloadId_001": [
+			{"Description": "Post Request for Liabrary API"},
+			{"RequestType": "POST"},
+			{"ContentType": "application/json"},
+			{"Endpoint": "/Library/Addbook.php"},
+			{
+				"Body": {
+					"name":"Book_Two",
+					"isbn":"isbn_two",
+					"aisle":"102",
+					"author":"Test_Two"
+						}
+			}
+		]
+	},
+	{
+		"PayloadId_002": [
+			{"Description": "Post Request for Liabrary API"},
+			{"RequestType": "POST"},
+			{"ContentType": "application/json"},
+			{"Endpoint": "/Library/Addbook.php"},
+			{
+				"Body": {
+					"name":"TestOne",
+					"isbn":"Tone",
+					"aisle":"100",
+					"author":"TestOne"
+						}
+			}
+		]
+	}
+	
+]}

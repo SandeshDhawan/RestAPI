@@ -1,0 +1,52 @@
+{
+	"Payload": [
+	{
+		"PayloadId_001": [
+			{"Description": "GET Request for Liabrary API using Author Name"},
+			{"RequestType": "POST"},
+			{"ContentType": "application/json"},
+			{"Endpoint": "/Library/GetBook.php"},
+			{"QueryParameters": [
+				{"AuthorName": "Test_Two"}
+			]
+			}
+		]
+	},
+	{
+		"PayloadId_002": [
+			{"Description": "GET Request for Liabrary API using Author Name"},
+			{"RequestType": "POST"},
+			{"ContentType": "application/json"},
+			{"Endpoint": "/Library/GetBook.php"},
+			{"QueryParameters": [
+				{"AuthorName": "wrong_author_name"}
+			]
+			}
+		]
+	},
+	{
+		"PayloadId_003": [
+			{"Description": "GET Request for Liabrary API using ID"},
+			{"RequestType": "POST"},
+			{"ContentType": "application/json"},
+			{"Endpoint": "/Library/GetBook.php"},
+			{"QueryParameters": [
+				{"ID": "T111one111100"}
+			]
+			}
+		]
+	},
+	{
+		"PayloadId_004": [
+			{"Description": "GET Request for Liabrary API using ID"},
+			{"RequestType": "POST"},
+			{"ContentType": "application/json"},
+			{"Endpoint": "/Library/GetBook.php"},
+			{"QueryParameters": [
+				{"AuthorName": "wrong_ID"}
+			]
+			}
+		]
+	}
+	
+]}

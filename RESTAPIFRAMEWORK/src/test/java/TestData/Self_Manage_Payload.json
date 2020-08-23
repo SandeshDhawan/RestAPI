@@ -1,0 +1,49 @@
+{"Payload": [
+		{"PayloadId_001": [
+				{"Description": "Get User Auth Token Request for Scope SelfManage"},
+				{"RequestType": "POST"},
+				{"ContentType": "x-www-form-urlencoded"},
+				{"Endpoint": "/v2/ignite/oauth2/token"},
+				{"Headers": [{"authorization": "<SelfManage_UserAuthToken>"}]},
+				{"Parameters": [
+						{"grant_type": "client_credentials"},
+						{"client_id": "1341lqksufe0nmoiodvtcskvqb"},
+						{"scope":"fcagsdp.harman.com/SelfManage"}
+					]}
+			]},
+			{"PayloadId_002": [
+				{"Description": "Get User Auth Token Request for Scope SelfManage with wrong grant type"},
+				{"RequestType": "POST"},
+				{"ContentType": "x-www-form-urlencoded"},
+				{"Endpoint": "/v2/ignite/oauth2/token"},
+				{"Headers": [{"authorization": "<SelfManage_UserAuthToken>"}]},
+				{"Parameters": [
+						{"grant_type": "Test"},
+						{"client_id": "1341lqksufe0nmoiodvtcskvqb"},
+						{"scope":"fcagsdp.harman.com/SelfManage"}
+					]}
+			]},
+			{"PayloadId_003": [
+				{"Description": "Get User Auth Token Request for Scope SelfManage without grant type"},
+				{"RequestType": "POST"},
+				{"ContentType": "x-www-form-urlencoded"},
+				{"Endpoint": "/v2/ignite/oauth2/token"},
+				{"Headers": [{"authorization": "<SelfManage_UserAuthToken>"}]},
+				{"Parameters": [
+						{"client_id": "1341lqksufe0nmoiodvtcskvqb"},
+						{"scope":"fcagsdp.harman.com/SelfManage"}
+					]}
+			]},
+			{"PayloadId_004": [
+				{"Description": "Get User Auth Token Request for Scope SelfManage with wrong Scope"},
+				{"RequestType": "POST"},
+				{"ContentType": "x-www-form-urlencoded"},
+				{"Endpoint": "/v2/ignite/oauth2/token"},
+				{"Headers": [{"authorization": "<SelfManage_UserAuthToken>"}]},
+				{"Parameters": [
+						{"grant_type": "client_credentials"},
+						{"client_id": "1341lqksufe0nmoiodvtcskvqb"},
+						{"scope":"Test"}
+					]}
+			]}
+]}

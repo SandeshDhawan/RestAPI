@@ -1,0 +1,42 @@
+{
+	"Payload": [
+	{
+		"PayloadId_001": [
+			{"Description": "Post Request for Google API"},
+			{"RequestType": "PUT"},
+			{"ContentType": "application/json"},
+			{"Endpoint": "/maps/api/place/update/json"},
+			{"QueryParameters": [
+				{"Key": "qaclick123"}
+			]
+			},
+			{
+				"Body": {
+					"place_id":"3cbb9aa3b4fcc62cb60991dfa412c5bd",
+					"address":"Test123",
+					"key":"qaclick123"
+						}
+				}
+		]
+	},
+	{
+		"PayloadId_002": [
+			{"Description": "Post Request for Google API"},
+			{"RequestType": "PUT"},
+			{"ContentType": "application/json"},
+			{"Endpoint": "/maps/api/place/update/json"},
+			{"QueryParameters": [
+				{"Key": "qaclick123"}
+			]
+			},
+			{
+				"Body": {
+					"place_id":"1234",
+					"address":"Test123",
+					"key":"qaclick123"
+						}
+				}
+		]
+	}
+	
+]}

@@ -1,0 +1,30 @@
+{
+	"Payload": [
+	{
+		"PayloadId_001": [
+			{"Description": "GET Request for Google API"},
+			{"RequestType": "GET"},
+			{"ContentType": "application/json"},
+			{"Endpoint": "/maps/api/place/get/json"},
+			{"QueryParameters": [
+					{"Key": "qaclick123"},
+					{"place_id": "8df3c851d5f7159c79f54b7355c0f9c1"}
+				]
+			}
+		]
+	},
+	{
+		"PayloadId_002": [
+			{"Description": "GET Request for Google API"},
+			{"RequestType": "GET"},
+			{"ContentType": "application/json"},
+			{"Endpoint": "/maps/api/place/get/json"},
+			{"QueryParameters": [
+					{"place_id": "1234"},
+					{"Key": "qaclick123"}
+				]
+			}
+		]
+	}
+	
+]}

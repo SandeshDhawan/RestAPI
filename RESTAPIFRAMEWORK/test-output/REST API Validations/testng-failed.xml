@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [REST API Validations]">
+  <test name="API Test Cases">
+    <classes>
+      <class name="cucumberOptions.TestRunner"/>
+    </classes>
+  </test> <!-- API Test Cases -->
+  <test name="API Test Cases(failed)">
+    <classes>
+      <class name="cucumberOptions.TestRunner">
+        <methods>
+          <include name="runScenario" invocation-numbers="1 9 11"/>
+          <include name="tearDownClass"/>
+          <include name="setUpClass"/>
+        </methods>
+      </class> <!-- cucumberOptions.TestRunner -->
+    </classes>
+  </test> <!-- API Test Cases(failed) -->
+</suite> <!-- Failed suite [REST API Validations] -->
