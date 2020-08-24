@@ -1,0 +1,53 @@
+{
+	"Payload": [
+	{
+		"PayloadId_001": [
+			{"Description": "Post Request for Generate Token"},
+			{"RequestType": "POST"},
+			{"ContentType": "application/json"},
+			{"Endpoint": "/Account/v1/GenerateToken"},
+			{
+				"Body": {
+ 					"userName": "TOOLSQA-Test",
+  					"password": "Test@@123"
+				}
+			}
+		]
+	},
+	{
+		"PayloadId_002": [
+			{"Description": "Post Request for Generate Token"},
+			{"RequestType": "POST"},
+			{"ContentType": "application/json"},
+			{"Endpoint": "/Account/v1/GenerateToken"},
+			{
+				"Body": {
+ 					"userName": "Wrong",
+  					"password": "Test@@123"
+				}
+			}
+		]
+	},
+	{
+		"PayloadId_003": [
+			{"Description": "Post Request for Generate Token"},
+			{"RequestType": "POST"},
+			{"ContentType": "application/json"},
+			{"Endpoint": "/Account/v1/GenerateToken"},
+			{
+				"Body": {
+ 					"userName": "TOOLSQA-Test",
+  					"password": "Wrong"
+				}
+			}
+		]
+	},
+	{
+		"PayloadId_004": [
+			{"Description": "Post Request for Generate Token"},
+			{"RequestType": "POST"},
+			{"ContentType": "application/json"},
+			{"Endpoint": "/Account/v1/GenerateToken"}
+		]
+	}
+]}
