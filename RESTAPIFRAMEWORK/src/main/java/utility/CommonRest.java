@@ -28,11 +28,12 @@ public class CommonRest {
 	static Response response;
 
 	static Logger logger = LogManager.getLogger(CommonRest.class);
-	
+
 	public void readPropertiesFile() {
 
-		logger.info("***************************************Started Execution of Test Cases****************************************");
-		
+		logger.info(
+				"***************************************Started Execution of Test Cases****************************************");
+
 		Properties prop = new Properties();
 		FileInputStream file;
 		try {
@@ -40,7 +41,7 @@ public class CommonRest {
 					System.getProperty("user.dir") + "\\src\\main\\java\\utility\\config.properties");
 			prop.load(file);
 			for (String key : prop.stringPropertyNames()) {
-				logger.info(key+":"+prop.getProperty(key));
+				logger.info(key + ":" + prop.getProperty(key));
 				properties.put(key, prop.getProperty(key));
 
 			}
@@ -98,12 +99,14 @@ public class CommonRest {
 
 		String reqType = null;
 		String reqEndpoint = null;
-		logger.info("Endpoint is="+endpoint);
-		
+		logger.info("Endpoint is=" + endpoint);
+
 		if (endpoint.equalsIgnoreCase("Google_API"))
 			request = RestAssured.given().baseUri(properties.get("Google_API"));
 		else if (endpoint.equalsIgnoreCase("Liabrary_API"))
 			request = RestAssured.given().baseUri(properties.get("Liabrary_API"));
+		else if (endpoint.equalsIgnoreCase("Bookstore_API"))
+			request = RestAssured.given().baseUri(properties.get("Bookstore_API"));
 		else
 			request = RestAssured.given().baseUri(properties.get("user_payload_endpoint"));
 
@@ -180,7 +183,7 @@ public class CommonRest {
 		}
 
 		logger.info("Data in Dictionary is=" + dictionary);
-		
+
 		logger.info("ContentType is=" + dictionary.get("Content Type"));
 		logger.info("Request Endpoint =" + dictionary.get("ReqType"));
 		logger.info("Request Body is=" + dictionary.get("ReqBody"));
@@ -237,7 +240,6 @@ public class CommonRest {
 
 		int Actual_status_code = response.getStatusCode();
 
-
 		logger.info("Response is=" + response);
 		logger.info("Status Code is=" + Actual_status_code);
 
@@ -247,7 +249,7 @@ public class CommonRest {
 
 	public void valueGeneratedInResponse(String fields, String values) {
 		String response_converted_in_string = response.asString();
-		logger.info("Response Converted in String Format is="+response_converted_in_string);
+		logger.info("Response Converted in String Format is=" + response_converted_in_string);
 		JsonPath js = new JsonPath(response_converted_in_string);
 		String splitted_fields[];
 		String splitted_values[];
@@ -257,13 +259,13 @@ public class CommonRest {
 			splitted_values = values.split(";");
 
 			for (int i = 0; i < splitted_fields.length; i++) {
-				
+
 				logger.info(splitted_fields[i] + " Value is=" + js.get(splitted_fields[i]));
 				org.junit.Assert.assertEquals(js.get(splitted_fields[i]).toString().replace("[", "").replace("]", ""),
 						splitted_values[i].toString());
 			}
 		} else {
-			
+
 			logger.info(fields + " Value is=" + js.get(fields));
 			logger.info("Value Passed from Featutre File is=" + values);
 			org.junit.Assert.assertEquals(js.get(fields).toString().replace("[", "").replace("]", ""), values);
