@@ -1,6 +1,6 @@
 Feature: Test Cases for PUT Google API
 
-  @AllTestCases @Smoke
+  @Smoke
   Scenario Outline: Verify Positive Scenario Successfull for PUT Request
     Given User Reads a User payload <User_Payload> for <endpoint>
     When User sends a api request for method <Method>
@@ -10,7 +10,7 @@ Feature: Test Cases for PUT Google API
       | User_Payload                              | endpoint   | Method | Status_Code |
       | Put_Google_API_Payload.json;PayloadId_001 | Google_API | PUT    |         200 |
 
-  @AllTestCases @Regression
+  @Regression
   Scenario Outline: Verify erroe message for wrong place id
     Given User Reads a User payload <User_Payload> for <endpoint>
     When User sends a api request for method <Method>

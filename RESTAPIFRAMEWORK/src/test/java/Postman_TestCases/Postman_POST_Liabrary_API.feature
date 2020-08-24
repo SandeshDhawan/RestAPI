@@ -1,6 +1,6 @@
 Feature: Test Cases for POST Liabrary API
 
-  @AllTestCases @Smoke
+  @Smoke
   Scenario Outline: Verify user is able to add a book successfully
     Given User Reads a User payload <User_Payload> for <endpoint>
     When User sends a api request for method <Method>
@@ -11,7 +11,7 @@ Feature: Test Cases for POST Liabrary API
       | User_Payload                                 | endpoint     | Method | Status_Code | fields | values             |
       | Post_Liabrary_API_Payload.json;PayloadId_001 | Liabrary_API | POST   |         200 | Msg    | successfully added |
 
-  @AllTestCases @Regression
+  @Regression
   Scenario Outline: Verify error message is displayed if book is alrady present
     Given User Reads a User payload <User_Payload> for <endpoint>
     When User sends a api request for method <Method>

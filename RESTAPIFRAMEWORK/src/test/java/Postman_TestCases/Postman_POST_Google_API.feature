@@ -1,6 +1,6 @@
 Feature: Test Cases for POST Google API
 
-  @AllTestCases @Smoke
+  @Smoke
   Scenario Outline: Verify Positive Scenario Successfull for POST Request
     Given User Reads a User payload <User_Payload> for <endpoint>
     When User sends a api request for method <Method>
