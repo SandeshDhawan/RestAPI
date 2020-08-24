@@ -1,4 +1,4 @@
-Feature: Test Cases for GET Google API
+Feature: Test Cases for POST Authorize Account API
 
   @Smoke
   Scenario Outline: Verify Positive Scenario for Authorize Account

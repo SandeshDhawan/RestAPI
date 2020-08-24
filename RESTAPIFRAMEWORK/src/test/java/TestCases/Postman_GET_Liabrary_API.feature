@@ -1,4 +1,4 @@
-Feature: Test Cases for POST Liabrary API
+Feature: Test Cases for GET Liabrary API
 
   @Smoke
   Scenario Outline: Verify user is able get a book details by author name
