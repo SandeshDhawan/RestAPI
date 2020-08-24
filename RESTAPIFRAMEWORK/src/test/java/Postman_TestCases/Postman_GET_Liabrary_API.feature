@@ -11,7 +11,7 @@ Feature: Test Cases for POST Liabrary API
       | User_Payload                                | endpoint     | Method | Status_Code | fields    | values   |
       | Get_Liabrary_API_Payload.json;PayloadId_001 | Liabrary_API | GET    |         200 | book_name | Book_Two |
 
-  @AllTestCases @Smoke
+  @AllTestCases @Regression
   Scenario Outline: Verify book details is not diaplyed for wrong author name
     Given User Reads a User payload <User_Payload> for <endpoint>
     When User sends a api request for method <Method>
@@ -33,7 +33,7 @@ Feature: Test Cases for POST Liabrary API
       | User_Payload                                | endpoint     | Method | Status_Code | fields                      | values                         |
       | Get_Liabrary_API_Payload.json;PayloadId_003 | Liabrary_API | GET    |         200 | book_name;isbn;aisle;author | 1111;T111one;111100;Tes111tOne |
 
-  @AllTestCases @Smoke
+  @AllTestCases @Regression
   Scenario Outline: Verify book details is not diaplyed for wrong ID
     Given User Reads a User payload <User_Payload> for <endpoint>
     When User sends a api request for method <Method>
