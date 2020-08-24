@@ -10,7 +10,7 @@ Feature: Test Cases for POST Authorize Account API
       | User_Payload                                      | endpoint      | Method | Status_Code |
       | Authorized_Account_API_Payload.json;PayloadId_003 | Bookstore_API | POST   |         200 |
 
-  @Smoke
+  @Regression
   Scenario Outline: Verify User Not Found error is displayed for wrong UserName and Password
     Given User Reads a User payload <User_Payload> for <endpoint>
     When User sends a api request for method <Method>
@@ -21,7 +21,7 @@ Feature: Test Cases for POST Authorize Account API
       | User_Payload                                      | endpoint      | Method | Status_Code | fields        | values               |
       | Authorized_Account_API_Payload.json;PayloadId_001 | Bookstore_API | POST   |         404 | code; message | 1207;User not found! |
 
-  @Smoke
+  @Regression
   Scenario Outline: Verify error message is displayed when Username and Password is not passed in body
     Given User Reads a User payload <User_Payload> for <endpoint>
     When User sends a api request for method <Method>
