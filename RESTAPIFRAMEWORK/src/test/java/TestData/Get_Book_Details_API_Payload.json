@@ -1,0 +1,23 @@
+{
+	"Payload": [
+	{
+		"PayloadId_001": [
+			{"Description": "GET Request for BookStore Details"},
+			{"RequestType": "GET"},
+			{"ContentType": "application/json"},
+			{"Endpoint": "/BookStore/v1/Books"}
+		]
+	},
+	{
+		"PayloadId_002": [
+			{"Description": "GET Request for Bookbased in ISBN Number"},
+			{"RequestType": "GET"},
+			{"ContentType": "application/json"},
+			{"Endpoint": "/BookStore/v1/Book"},
+			{"QueryParameters": [
+					{"ISBN": "9781449365035"}
+				]
+			}
+		]
+	}
+]}
