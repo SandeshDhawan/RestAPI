@@ -1,0 +1,379 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="3" total="22" passed="19">
+  <reporter-output>
+  </reporter-output>
+  <suite name="REST API Validations" duration-ms="19768" started-at="2020-08-25T09:42:27Z" finished-at="2020-08-25T09:42:46Z">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumberOptions.TestRunner@60addb54]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test name="API Test Cases" duration-ms="19768" started-at="2020-08-25T09:42:27Z" finished-at="2020-08-25T09:42:46Z">
+      <class name="cucumberOptions.TestRunner">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:cucumberOptions.TestRunner@60addb54]" name="setUpClass" is-config="true" duration-ms="739" started-at="2020-08-25T09:42:27Z" finished-at="2020-08-25T09:42:27Z">
+        </test-method> <!-- setUpClass -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumberOptions.TestRunner@60addb54]" name="runScenario" duration-ms="6445" started-at="2020-08-25T09:42:27Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-08-25T09:42:34Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify all details of Books"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Test Cases for GET Book Details]"]]>
+              </value>
+            </param>
+          </params>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumberOptions.TestRunner@60addb54]" name="runScenario" duration-ms="990" started-at="2020-08-25T09:42:34Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-08-25T09:42:35Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify user is able to retrive book details based on ISBN number"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Test Cases for GET Book Details]"]]>
+              </value>
+            </param>
+          </params>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumberOptions.TestRunner@60addb54]" name="runScenario" duration-ms="793" started-at="2020-08-25T09:42:35Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-08-25T09:42:36Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify Positive Scenario for Authorize Account"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Test Cases for POST Authorize Account API]"]]>
+              </value>
+            </param>
+          </params>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumberOptions.TestRunner@60addb54]" name="runScenario" duration-ms="790" started-at="2020-08-25T09:42:36Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-08-25T09:42:36Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify User Not Found error is displayed for wrong UserName and Password"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Test Cases for POST Authorize Account API]"]]>
+              </value>
+            </param>
+          </params>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumberOptions.TestRunner@60addb54]" name="runScenario" duration-ms="814" started-at="2020-08-25T09:42:36Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-08-25T09:42:37Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify error message is displayed when Username and Password is not passed in body"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Test Cases for POST Authorize Account API]"]]>
+              </value>
+            </param>
+          </params>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumberOptions.TestRunner@60addb54]" name="runScenario" duration-ms="829" started-at="2020-08-25T09:42:37Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-08-25T09:42:38Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify Positive Scenario for Generate Token"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Test Cases for Generate Token API]"]]>
+              </value>
+            </param>
+          </params>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumberOptions.TestRunner@60addb54]" name="runScenario" duration-ms="888" started-at="2020-08-25T09:42:38Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-08-25T09:42:39Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify error message is displayed for wrong UserName"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Test Cases for Generate Token API]"]]>
+              </value>
+            </param>
+          </params>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumberOptions.TestRunner@60addb54]" name="runScenario" duration-ms="870" started-at="2020-08-25T09:42:39Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-08-25T09:42:40Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify error message is displayed for wrong Password"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Test Cases for Generate Token API]"]]>
+              </value>
+            </param>
+          </params>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumberOptions.TestRunner@60addb54]" name="runScenario" duration-ms="773" started-at="2020-08-25T09:42:40Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-08-25T09:42:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify error message is displayed for Body Without UserName and Password"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Test Cases for Generate Token API]"]]>
+              </value>
+            </param>
+          </params>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumberOptions.TestRunner@60addb54]" name="runScenario" duration-ms="301" started-at="2020-08-25T09:42:41Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-08-25T09:42:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify Positive Scenario Successfull for GET Request"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Test Cases for GET Google API]"]]>
+              </value>
+            </param>
+          </params>
+        </test-method> <!-- runScenario -->
+        <test-method status="FAIL" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumberOptions.TestRunner@60addb54]" name="runScenario" duration-ms="128" started-at="2020-08-25T09:42:41Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-08-25T09:42:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify error message is displayed for wrong place id"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Test Cases for GET Google API]"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected:<404> but was:<200>]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected:<404> but was:<200>
+	at org.junit.Assert.fail(Assert.java:93)
+	at org.junit.Assert.failNotEquals(Assert.java:647)
+	at org.junit.Assert.assertEquals(Assert.java:128)
+	at org.junit.Assert.assertEquals(Assert.java:472)
+	at org.junit.Assert.assertEquals(Assert.java:456)
+	at utility.CommonRest.verifyStatusCode(CommonRest.java:246)
+	at StepDefinations.Common_Step_definations.verifyStatusCode(Common_Step_definations.java:41)
+	at ✽.status code 404 should be displayed(file:///C:/Users/sdhawan/API_Project/RESTAPIFRAMEWORK/src/test/java/TestCases/Postman_GET_Google_API.feature:17)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumberOptions.TestRunner@60addb54]" name="runScenario" duration-ms="198" started-at="2020-08-25T09:42:41Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-08-25T09:42:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify user is able get a book details by author name"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Test Cases for GET Liabrary API]"]]>
+              </value>
+            </param>
+          </params>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumberOptions.TestRunner@60addb54]" name="runScenario" duration-ms="159" started-at="2020-08-25T09:42:41Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-08-25T09:42:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify book details is not diaplyed for wrong author name"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Test Cases for GET Liabrary API]"]]>
+              </value>
+            </param>
+          </params>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumberOptions.TestRunner@60addb54]" name="runScenario" duration-ms="219" started-at="2020-08-25T09:42:41Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-08-25T09:42:42Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify user is able get a book details by ID"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Test Cases for GET Liabrary API]"]]>
+              </value>
+            </param>
+          </params>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumberOptions.TestRunner@60addb54]" name="runScenario" duration-ms="172" started-at="2020-08-25T09:42:42Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-08-25T09:42:42Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify book details is not diaplyed for wrong ID"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Test Cases for GET Liabrary API]"]]>
+              </value>
+            </param>
+          </params>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumberOptions.TestRunner@60addb54]" name="runScenario" duration-ms="223" started-at="2020-08-25T09:42:42Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-08-25T09:42:42Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify Positive Scenario Successfull for POST Request"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Test Cases for POST Google API]"]]>
+              </value>
+            </param>
+          </params>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumberOptions.TestRunner@60addb54]" name="runScenario" duration-ms="185" started-at="2020-08-25T09:42:42Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-08-25T09:42:42Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify Positive Scenario Successfull for POST Request"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Test Cases for POST Google API]"]]>
+              </value>
+            </param>
+          </params>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumberOptions.TestRunner@60addb54]" name="runScenario" duration-ms="186" started-at="2020-08-25T09:42:42Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-08-25T09:42:42Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify Positive Scenario Successfull for POST Request"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Test Cases for POST Google API]"]]>
+              </value>
+            </param>
+          </params>
+        </test-method> <!-- runScenario -->
+        <test-method status="FAIL" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumberOptions.TestRunner@60addb54]" name="runScenario" duration-ms="147" started-at="2020-08-25T09:42:42Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-08-25T09:42:43Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify user is able to add a book successfully"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Test Cases for POST Liabrary API]"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected:<200> but was:<404>]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected:<200> but was:<404>
+	at org.junit.Assert.fail(Assert.java:93)
+	at org.junit.Assert.failNotEquals(Assert.java:647)
+	at org.junit.Assert.assertEquals(Assert.java:128)
+	at org.junit.Assert.assertEquals(Assert.java:472)
+	at org.junit.Assert.assertEquals(Assert.java:456)
+	at utility.CommonRest.verifyStatusCode(CommonRest.java:246)
+	at StepDefinations.Common_Step_definations.verifyStatusCode(Common_Step_definations.java:41)
+	at ✽.status code 200 should be displayed(file:///C:/Users/sdhawan/API_Project/RESTAPIFRAMEWORK/src/test/java/TestCases/Postman_POST_Liabrary_API.feature:7)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumberOptions.TestRunner@60addb54]" name="runScenario" duration-ms="140" started-at="2020-08-25T09:42:43Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-08-25T09:42:43Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify error message is displayed if book is alrady present"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Test Cases for POST Liabrary API]"]]>
+              </value>
+            </param>
+          </params>
+        </test-method> <!-- runScenario -->
+        <test-method status="FAIL" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumberOptions.TestRunner@60addb54]" name="runScenario" duration-ms="1706" started-at="2020-08-25T09:42:43Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-08-25T09:42:44Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify Positive Scenario Successfull for PUT Request"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Test Cases for PUT Google API]"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected:<200> but was:<404>]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected:<200> but was:<404>
+	at org.junit.Assert.fail(Assert.java:93)
+	at org.junit.Assert.failNotEquals(Assert.java:647)
+	at org.junit.Assert.assertEquals(Assert.java:128)
+	at org.junit.Assert.assertEquals(Assert.java:472)
+	at org.junit.Assert.assertEquals(Assert.java:456)
+	at utility.CommonRest.verifyStatusCode(CommonRest.java:246)
+	at StepDefinations.Common_Step_definations.verifyStatusCode(Common_Step_definations.java:41)
+	at ✽.status code 200 should be displayed(file:///C:/Users/sdhawan/API_Project/RESTAPIFRAMEWORK/src/test/java/TestCases/Postman_PUT_Google_API.feature:7)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumberOptions.TestRunner@60addb54]" name="runScenario" duration-ms="1570" started-at="2020-08-25T09:42:44Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-08-25T09:42:46Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify erroe message for wrong place id"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Test Cases for PUT Google API]"]]>
+              </value>
+            </param>
+          </params>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:cucumberOptions.TestRunner@60addb54]" name="tearDownClass" is-config="true" duration-ms="452" started-at="2020-08-25T09:42:46Z" finished-at="2020-08-25T09:42:46Z">
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- cucumberOptions.TestRunner -->
+    </test> <!-- API Test Cases -->
+  </suite> <!-- REST API Validations -->
+</testng-results>

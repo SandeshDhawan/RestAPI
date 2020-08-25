@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="21.05" tests="22" errors="0" skipped="0" failures="3">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="cucumber.options" value="--tags @Smoke"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jre1.8.0_251\bin"/>
+    <property name="java.vm.version" value="25.251-b08"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="maven.multiModuleProjectDirectory" value="C:\Users\sdhawan\API_Project\RESTAPIFRAMEWORK"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=";"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.script" value=""/>
+    <property name="user.country" value="US"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="C:\Users\sdhawan\API_Project\RESTAPIFRAMEWORK"/>
+    <property name="java.runtime.version" value="1.8.0_251-b08"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="C:\Program Files\Java\jre1.8.0_251\lib\endorsed"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="C:\Users\sdhawan\AppData\Local\Temp\"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.variant" value=""/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="classworlds.conf" value="C:\Users\sdhawan\apache-maven-3.6.3\bin\..\bin\m2.conf"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\Webex\Webex\Applications;C:\Python3;C:\Python3\Scripts;C:\instantclient_19_3;C:\Program Files\Java\jdk-13.0.1\bin\jave.exe;C:\Program Files (x86)\Sennheiser\SoftphoneSDK\;C:\Program Files\PuTTY\;C:\Program Files\TortoiseSVN\bin;C:\Program Files\Git\cmd;C:\Users\sdhawan\apache-maven-3.6.3\bin;C:\Users\sdhawan\AppData\Local\Microsoft\WindowsApps;;C:\Program Files\Docker Toolbox;."/>
+    <property name="maven.conf" value="C:\Users\sdhawan\apache-maven-3.6.3\bin\../conf"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="10.0"/>
+    <property name="library.jansi.path" value="C:\Users\sdhawan\apache-maven-3.6.3\bin\..\lib\jansi-native"/>
+    <property name="user.home" value="C:\Users\sdhawan"/>
+    <property name="user.timezone" value="Asia/Calcutta"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="user.name" value="SDhawan"/>
+    <property name="java.class.path" value="C:\Users\sdhawan\apache-maven-3.6.3\bin\..\boot\plexus-classworlds-2.6.0.jar"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="C:\Program Files\Java\jre1.8.0_251"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher test verify -Dcucumber.options=--tags @Smoke"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="en"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.8.0_251"/>
+    <property name="java.ext.dirs" value="C:\Program Files\Java\jre1.8.0_251\lib\ext;C:\Windows\Sun\Java\lib\ext"/>
+    <property name="sun.boot.class.path" value="C:\Program Files\Java\jre1.8.0_251\lib\resources.jar;C:\Program Files\Java\jre1.8.0_251\lib\rt.jar;C:\Program Files\Java\jre1.8.0_251\lib\sunrsasign.jar;C:\Program Files\Java\jre1.8.0_251\lib\jsse.jar;C:\Program Files\Java\jre1.8.0_251\lib\jce.jar;C:\Program Files\Java\jre1.8.0_251\lib\charsets.jar;C:\Program Files\Java\jre1.8.0_251\lib\jfr.jar;C:\Program Files\Java\jre1.8.0_251\classes"/>
+    <property name="sun.stderr.encoding" value="cp437"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="C:\Users\sdhawan\apache-maven-3.6.3\bin\.."/>
+    <property name="file.separator" value="\"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.stdout.encoding" value="cp437"/>
+    <property name="sun.desktop" value="windows"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+  </properties>
+  <testcase name="runScenario" classname="cucumberOptions.TestRunner" time="7.901"/>
+  <testcase name="runScenario" classname="cucumberOptions.TestRunner" time="0.273"/>
+  <testcase name="runScenario" classname="cucumberOptions.TestRunner" time="0.215"/>
+  <testcase name="runScenario" classname="cucumberOptions.TestRunner" time="0.682"/>
+  <testcase name="runScenario" classname="cucumberOptions.TestRunner" time="0.938"/>
+  <testcase name="runScenario" classname="cucumberOptions.TestRunner" time="0.875"/>
+  <testcase name="runScenario" classname="cucumberOptions.TestRunner" time="0.767"/>
+  <testcase name="runScenario" classname="cucumberOptions.TestRunner" time="0.881"/>
+  <testcase name="runScenario" classname="cucumberOptions.TestRunner" time="0.768"/>
+  <testcase name="runScenario" classname="cucumberOptions.TestRunner" time="0.29"/>
+  <testcase name="runScenario" classname="cucumberOptions.TestRunner" time="0.224">
+    <failure message="expected:&lt;404&gt; but was:&lt;200&gt;" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: expected:<404> but was:<200>
+]]></failure>
+    <system-out><![CDATA[[INFO ] 2020-08-25 09:42:41.385 [main] CommonRest - ***************************************Started Execution of Test Cases****************************************
+[INFO ] 2020-08-25 09:42:41.385 [main] CommonRest - Bookstore_API:https://bookstore.toolsqa.com
+[INFO ] 2020-08-25 09:42:41.386 [main] CommonRest - Liabrary_API:http://216.10.245.166
+[INFO ] 2020-08-25 09:42:41.386 [main] CommonRest - Google_API:https://rahulshettyacademy.com
+[INFO ] 2020-08-25 09:42:41.386 [main] CommonRest - JSON Converted in to array is=[{"Description":"GET Request for Google API"},{"RequestType":"GET"},{"ContentType":"application/json"},{"Endpoint":"/maps/api/place/get/json"},{"QueryParameters":[{"place_id":"1234"},{"Key":"qaclick123"}]}]
+[INFO ] 2020-08-25 09:42:41.387 [main] CommonRest - Array after updating a value is=[{"Description":"GET Request for Google API"},{"RequestType":"GET"},{"ContentType":"application/json"},{"Endpoint":"/maps/api/place/get/json"},{"QueryParameters":[{"place_id":"1234"},{"Key":"qaclick123"}]}]
+[INFO ] 2020-08-25 09:42:41.387 [main] CommonRest - Array Payload attribute is=[{"Description":"GET Request for Google API"},{"RequestType":"GET"},{"ContentType":"application/json"},{"Endpoint":"/maps/api/place/get/json"},{"QueryParameters":[{"place_id":"1234"},{"Key":"qaclick123"}]}]
+[INFO ] 2020-08-25 09:42:41.387 [main] CommonRest - Endpoint is=Google_API
+[INFO ] 2020-08-25 09:42:41.388 [main] CommonRest - application/json
+[INFO ] 2020-08-25 09:42:41.388 [main] CommonRest - Endpoint is=/maps/api/place/get/json
+[INFO ] 2020-08-25 09:42:41.388 [main] CommonRest - Data in Dictionary is={ReqType=GET, ReqBody={"password":"Wrong","userName":"TOOLSQA-Test"}, ISBN=9781449365035, Content Type=application/json, PAYLOAD=[{"Description":"GET Request for Google API"},{"RequestType":"GET"},{"ContentType":"application/json"},{"Endpoint":"/maps/api/place/get/json"},{"QueryParameters":[{"place_id":"1234"},{"Key":"qaclick123"}]}], EndPoint=/maps/api/place/get/json, Key=qaclick123, place_id=1234}
+[INFO ] 2020-08-25 09:42:41.388 [main] CommonRest - ContentType is=application/json
+[INFO ] 2020-08-25 09:42:41.389 [main] CommonRest - Request Endpoint =GET
+[INFO ] 2020-08-25 09:42:41.389 [main] CommonRest - Request Body is={"password":"Wrong","userName":"TOOLSQA-Test"}
+Request method:	GET
+Request URI:	https://rahulshettyacademy.com/maps/api/place/get/json?place_id=1234&Key=qaclick123
+Proxy:			<none>
+Request params:	<none>
+Query params:	place_id=1234
+				Key=qaclick123
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Date: Tue, 25 Aug 2020 04:12:41 GMT
+Server: Apache/2.4.18 (Ubuntu)
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: POST
+Access-Control-Max-Age: 3600
+Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With
+Content-Length: 0
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+Content-Type: application/json; charset=UTF-8
+[INFO ] 2020-08-25 09:42:41.503 [main] CommonRest - Response is=io.restassured.internal.RestAssuredResponseImpl@7f1ef916
+[INFO ] 2020-08-25 09:42:41.503 [main] CommonRest - Status Code is=200
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario" classname="cucumberOptions.TestRunner" time="0.301"/>
+  <testcase name="runScenario" classname="cucumberOptions.TestRunner" time="0.392"/>
+  <testcase name="runScenario" classname="cucumberOptions.TestRunner" time="0.86"/>
+  <testcase name="runScenario" classname="cucumberOptions.TestRunner" time="0.438"/>
+  <testcase name="runScenario" classname="cucumberOptions.TestRunner" time="0.422"/>
+  <testcase name="runScenario" classname="cucumberOptions.TestRunner" time="0.375"/>
+  <testcase name="runScenario" classname="cucumberOptions.TestRunner" time="0.459"/>
+  <testcase name="runScenario" classname="cucumberOptions.TestRunner" time="0.215">
+    <failure message="expected:&lt;200&gt; but was:&lt;404&gt;" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: expected:<200> but was:<404>
+]]></failure>
+    <system-out><![CDATA[[INFO ] 2020-08-25 09:42:42.868 [main] CommonRest - ***************************************Started Execution of Test Cases****************************************
+[INFO ] 2020-08-25 09:42:42.869 [main] CommonRest - Bookstore_API:https://bookstore.toolsqa.com
+[INFO ] 2020-08-25 09:42:42.869 [main] CommonRest - Liabrary_API:http://216.10.245.166
+[INFO ] 2020-08-25 09:42:42.869 [main] CommonRest - Google_API:https://rahulshettyacademy.com
+[INFO ] 2020-08-25 09:42:42.880 [main] CommonRest - JSON Converted in to array is=[{"Description":"Post Request for Liabrary API"},{"RequestType":"POST"},{"ContentType":"application/json"},{"Endpoint":"/Library/Addbook.php"},{"Body":{"author":"Test_Two","isbn":"isbn_two","name":"Book_Two","aisle":"102"}}]
+[INFO ] 2020-08-25 09:42:42.881 [main] CommonRest - Array after updating a value is=[{"Description":"Post Request for Liabrary API"},{"RequestType":"POST"},{"ContentType":"application/json"},{"Endpoint":"/Library/Addbook.php"},{"Body":{"author":"Test_Two","isbn":"isbn_two","name":"Book_Two","aisle":"102"}}]
+[INFO ] 2020-08-25 09:42:42.881 [main] CommonRest - Array Payload attribute is=[{"Description":"Post Request for Liabrary API"},{"RequestType":"POST"},{"ContentType":"application/json"},{"Endpoint":"/Library/Addbook.php"},{"Body":{"author":"Test_Two","isbn":"isbn_two","name":"Book_Two","aisle":"102"}}]
+[INFO ] 2020-08-25 09:42:42.881 [main] CommonRest - Endpoint is=Liabrary_API
+[INFO ] 2020-08-25 09:42:42.881 [main] CommonRest - application/json
+[INFO ] 2020-08-25 09:42:42.882 [main] CommonRest - Endpoint is=/Library/Addbook.php
+[INFO ] 2020-08-25 09:42:42.882 [main] CommonRest - Data in Dictionary is={ReqType=POST, ReqBody={"author":"Test_Two","isbn":"isbn_two","name":"Book_Two","aisle":"102"}, ISBN=9781449365035, AuthorName=wrong_ID, Content Type=application/json, PAYLOAD=[{"Description":"Post Request for Liabrary API"},{"RequestType":"POST"},{"ContentType":"application/json"},{"Endpoint":"/Library/Addbook.php"},{"Body":{"author":"Test_Two","isbn":"isbn_two","name":"Book_Two","aisle":"102"}}], EndPoint=/Library/Addbook.php, ID=T111one111100, Key=qaclick123, place_id=1234}
+[INFO ] 2020-08-25 09:42:42.882 [main] CommonRest - ContentType is=application/json
+[INFO ] 2020-08-25 09:42:42.882 [main] CommonRest - Request Endpoint =POST
+[INFO ] 2020-08-25 09:42:42.882 [main] CommonRest - Request Body is={"author":"Test_Two","isbn":"isbn_two","name":"Book_Two","aisle":"102"}
+Request method:	POST
+Request URI:	http://216.10.245.166/Library/Addbook.php
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "author": "Test_Two",
+    "isbn": "isbn_two",
+    "name": "Book_Two",
+    "aisle": "102"
+}
+HTTP/1.1 404 Not Found
+Date: Tue, 25 Aug 2020 04:12:43 GMT
+Server: Apache
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: POST
+Access-Control-Max-Age: 3600
+Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+Transfer-Encoding: chunked
+Content-Type: application/json;charset=UTF-8
+
+{
+    "msg": "Add Book operation failed, looks like the book already exists"
+}
+[INFO ] 2020-08-25 09:42:43.011 [main] CommonRest - Response is=io.restassured.internal.RestAssuredResponseImpl@1d408060
+[INFO ] 2020-08-25 09:42:43.011 [main] CommonRest - Status Code is=404
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario" classname="cucumberOptions.TestRunner" time="0.259"/>
+  <testcase name="runScenario" classname="cucumberOptions.TestRunner" time="0.2">
+    <failure message="expected:&lt;200&gt; but was:&lt;404&gt;" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: expected:<200> but was:<404>
+]]></failure>
+    <system-out><![CDATA[[INFO ] 2020-08-25 09:42:43.155 [main] CommonRest - ***************************************Started Execution of Test Cases****************************************
+[INFO ] 2020-08-25 09:42:43.155 [main] CommonRest - Bookstore_API:https://bookstore.toolsqa.com
+[INFO ] 2020-08-25 09:42:43.155 [main] CommonRest - Liabrary_API:http://216.10.245.166
+[INFO ] 2020-08-25 09:42:43.156 [main] CommonRest - Google_API:https://rahulshettyacademy.com
+[INFO ] 2020-08-25 09:42:43.169 [main] CommonRest - JSON Converted in to array is=[{"Description":"Post Request for Google API"},{"RequestType":"PUT"},{"ContentType":"application/json"},{"Endpoint":"/maps/api/place/update/json"},{"QueryParameters":[{"Key":"qaclick123"}]},{"Body":{"address":"Test123","place_id":"3cbb9aa3b4fcc62cb60991dfa412c5bd","key":"qaclick123"}}]
+[INFO ] 2020-08-25 09:42:43.170 [main] CommonRest - Array after updating a value is=[{"Description":"Post Request for Google API"},{"RequestType":"PUT"},{"ContentType":"application/json"},{"Endpoint":"/maps/api/place/update/json"},{"QueryParameters":[{"Key":"qaclick123"}]},{"Body":{"address":"Test123","place_id":"3cbb9aa3b4fcc62cb60991dfa412c5bd","key":"qaclick123"}}]
+[INFO ] 2020-08-25 09:42:43.170 [main] CommonRest - Array Payload attribute is=[{"Description":"Post Request for Google API"},{"RequestType":"PUT"},{"ContentType":"application/json"},{"Endpoint":"/maps/api/place/update/json"},{"QueryParameters":[{"Key":"qaclick123"}]},{"Body":{"address":"Test123","place_id":"3cbb9aa3b4fcc62cb60991dfa412c5bd","key":"qaclick123"}}]
+[INFO ] 2020-08-25 09:42:43.170 [main] CommonRest - Endpoint is=Google_API
+[INFO ] 2020-08-25 09:42:43.170 [main] CommonRest - application/json
+[INFO ] 2020-08-25 09:42:43.171 [main] CommonRest - Endpoint is=/maps/api/place/update/json
+[INFO ] 2020-08-25 09:42:43.171 [main] CommonRest - Data in Dictionary is={ReqType=PUT, ReqBody={"address":"Test123","place_id":"3cbb9aa3b4fcc62cb60991dfa412c5bd","key":"qaclick123"}, ISBN=9781449365035, AuthorName=wrong_ID, Content Type=application/json, PAYLOAD=[{"Description":"Post Request for Google API"},{"RequestType":"PUT"},{"ContentType":"application/json"},{"Endpoint":"/maps/api/place/update/json"},{"QueryParameters":[{"Key":"qaclick123"}]},{"Body":{"address":"Test123","place_id":"3cbb9aa3b4fcc62cb60991dfa412c5bd","key":"qaclick123"}}], EndPoint=/maps/api/place/update/json, ID=T111one111100, Key=qaclick123, place_id=1234}
+[INFO ] 2020-08-25 09:42:43.171 [main] CommonRest - ContentType is=application/json
+[INFO ] 2020-08-25 09:42:43.171 [main] CommonRest - Request Endpoint =PUT
+[INFO ] 2020-08-25 09:42:43.171 [main] CommonRest - Request Body is={"address":"Test123","place_id":"3cbb9aa3b4fcc62cb60991dfa412c5bd","key":"qaclick123"}
+Request method:	PUT
+Request URI:	https://rahulshettyacademy.com/maps/api/place/update/json?Key=qaclick123
+Proxy:			<none>
+Request params:	<none>
+Query params:	Key=qaclick123
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "address": "Test123",
+    "place_id": "3cbb9aa3b4fcc62cb60991dfa412c5bd",
+    "key": "qaclick123"
+}
+HTTP/1.1 404 Not Found
+Date: Tue, 25 Aug 2020 04:12:43 GMT
+Server: Apache/2.4.18 (Ubuntu)
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: POST
+Access-Control-Max-Age: 3600
+Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With
+Content-Length: 77
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+Content-Type: application/json;charset=UTF-8
+
+{
+    "msg": "Update address operation failed, looks like the data doesn't exists"
+}
+[INFO ] 2020-08-25 09:42:44.857 [main] CommonRest - Response is=io.restassured.internal.RestAssuredResponseImpl@76a14c8d
+[INFO ] 2020-08-25 09:42:44.857 [main] CommonRest - Status Code is=404
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario" classname="cucumberOptions.TestRunner" time="1.198"/>
+</testsuite>

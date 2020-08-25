@@ -1,0 +1,233 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>TestNG:  Unit Test</title>
+<style type="text/css">
+table caption,table.info_table,table.param,table.passed,table.failed {margin-bottom:10px;border:1px solid #000099;border-collapse:collapse;empty-cells:show;}
+table.info_table td,table.info_table th,table.param td,table.param th,table.passed td,table.passed th,table.failed td,table.failed th {
+border:1px solid #000099;padding:.25em .5em .25em .5em
+}
+table.param th {vertical-align:bottom}
+td.numi,th.numi,td.numi_attn {
+text-align:right
+}
+tr.total td {font-weight:bold}
+table caption {
+text-align:center;font-weight:bold;
+}
+table.passed tr.stripe td,table tr.passedodd td {background-color: #00AA00;}
+table.passed td,table tr.passedeven td {background-color: #33FF33;}
+table.passed tr.stripe td,table tr.skippedodd td {background-color: #cccccc;}
+table.passed td,table tr.skippedodd td {background-color: #dddddd;}
+table.failed tr.stripe td,table tr.failedodd td,table.param td.numi_attn {background-color: #FF3333;}
+table.failed td,table tr.failedeven td,table.param tr.stripe td.numi_attn {background-color: #DD0000;}
+tr.stripe td,tr.stripe th {background-color: #E6EBF9;}
+p.totop {font-size:85%;text-align:center;border-bottom:2px black solid}
+div.shootout {padding:2em;border:3px #4854A8 solid}
+</style>
+</head>
+<body>
+<table cellspacing=0 cellpadding=0 class="param">
+<tr><th>Test</th><th class="numi">Methods<br/>Passed</th><th class="numi">Scenarios<br/>Passed</th><th class="numi"># skipped</th><th class="numi"># failed</th><th class="numi">Total<br/>Time</th><th class="numi">Included<br/>Groups</th><th class="numi">Excluded<br/>Groups</th></tr>
+<tr><td style="text-align:left;padding-right:2em">API Test Cases</td><td class="numi">22</td><td class="numi">19</td><td class="numi">0</td><td class="numi_attn">22</td><td class="numi">19.8 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+</table>
+<a id="summary"></a>
+<table cellspacing=0 cellpadding=0 class="passed">
+<tr><th>Class</th><th>Method</th><th># of<br/>Scenarios</th><th>Start</th><th>Time<br/>(ms)</th></tr>
+<tr><th colspan="4">API Test Cases &#8212; failed</th></tr>
+<tr class="failedodd"><td rowspan="22">cucumberOptions.TestRunner<td><a href="#m1"><b>runScenario</b> (cucumber) ("Runs Cucumber Scenarios")</a></td><td class="numi">3</td><td>1598328761383</td><td class="numi">3476</td></tr><tr class="failedodd"><td><a href="#m2"><b>runScenario</b> (cucumber) ("Runs Cucumber Scenarios")</a></td><td class="numi">3</td><td>1598328761383</td><td class="numi">3476</td></tr><tr class="failedodd"><td><a href="#m3"><b>runScenario</b> (cucumber) ("Runs Cucumber Scenarios")</a></td><td class="numi">3</td><td>1598328761383</td><td class="numi">3476</td></tr><tr class="failedodd"><td><a href="#m4"><b>runScenario</b> (cucumber) ("Runs Cucumber Scenarios")</a></td><td class="numi">3</td><td>1598328761383</td><td class="numi">3476</td></tr><tr class="failedodd"><td><a href="#m5"><b>runScenario</b> (cucumber) ("Runs Cucumber Scenarios")</a></td><td class="numi">3</td><td>1598328761383</td><td class="numi">3476</td></tr><tr class="failedodd"><td><a href="#m6"><b>runScenario</b> (cucumber) ("Runs Cucumber Scenarios")</a></td><td class="numi">3</td><td>1598328761383</td><td class="numi">3476</td></tr><tr class="failedodd"><td><a href="#m7"><b>runScenario</b> (cucumber) ("Runs Cucumber Scenarios")</a></td><td class="numi">3</td><td>1598328761383</td><td class="numi">3476</td></tr><tr class="failedodd"><td><a href="#m8"><b>runScenario</b> (cucumber) ("Runs Cucumber Scenarios")</a></td><td class="numi">3</td><td>1598328761383</td><td class="numi">3476</td></tr><tr class="failedodd"><td><a href="#m9"><b>runScenario</b> (cucumber) ("Runs Cucumber Scenarios")</a></td><td class="numi">3</td><td>1598328761383</td><td class="numi">3476</td></tr><tr class="failedodd"><td><a href="#m10"><b>runScenario</b> (cucumber) ("Runs Cucumber Scenarios")</a></td><td class="numi">3</td><td>1598328761383</td><td class="numi">3476</td></tr><tr class="failedodd"><td><a href="#m11"><b>runScenario</b> (cucumber) ("Runs Cucumber Scenarios")</a></td><td class="numi">3</td><td>1598328761383</td><td class="numi">3476</td></tr><tr class="failedodd"><td><a href="#m12"><b>runScenario</b> (cucumber) ("Runs Cucumber Scenarios")</a></td><td class="numi">3</td><td>1598328761383</td><td class="numi">3476</td></tr><tr class="failedodd"><td><a href="#m13"><b>runScenario</b> (cucumber) ("Runs Cucumber Scenarios")</a></td><td class="numi">3</td><td>1598328761383</td><td class="numi">3476</td></tr><tr class="failedodd"><td><a href="#m14"><b>runScenario</b> (cucumber) ("Runs Cucumber Scenarios")</a></td><td class="numi">3</td><td>1598328761383</td><td class="numi">3476</td></tr><tr class="failedodd"><td><a href="#m15"><b>runScenario</b> (cucumber) ("Runs Cucumber Scenarios")</a></td><td class="numi">3</td><td>1598328761383</td><td class="numi">3476</td></tr><tr class="failedodd"><td><a href="#m16"><b>runScenario</b> (cucumber) ("Runs Cucumber Scenarios")</a></td><td class="numi">3</td><td>1598328761383</td><td class="numi">3476</td></tr><tr class="failedodd"><td><a href="#m17"><b>runScenario</b> (cucumber) ("Runs Cucumber Scenarios")</a></td><td class="numi">3</td><td>1598328761383</td><td class="numi">3476</td></tr><tr class="failedodd"><td><a href="#m18"><b>runScenario</b> (cucumber) ("Runs Cucumber Scenarios")</a></td><td class="numi">3</td><td>1598328761383</td><td class="numi">3476</td></tr><tr class="failedodd"><td><a href="#m19"><b>runScenario</b> (cucumber) ("Runs Cucumber Scenarios")</a></td><td class="numi">3</td><td>1598328761383</td><td class="numi">3476</td></tr><tr class="failedodd"><td><a href="#m20"><b>runScenario</b> (cucumber) ("Runs Cucumber Scenarios")</a></td><td class="numi">3</td><td>1598328761383</td><td class="numi">3476</td></tr><tr class="failedodd"><td><a href="#m21"><b>runScenario</b> (cucumber) ("Runs Cucumber Scenarios")</a></td><td class="numi">3</td><td>1598328761383</td><td class="numi">3476</td></tr><tr class="failedodd"><td><a href="#m22"><b>runScenario</b> (cucumber) ("Runs Cucumber Scenarios")</a></td><td class="numi">3</td><td>1598328761383</td><td class="numi">3476</td></tr>
+<tr><th colspan="4">API Test Cases &#8212; passed</th></tr>
+<tr class="passedodd"><td rowspan="22">cucumberOptions.TestRunner<td><a href="#m23"><b>runScenario</b> (cucumber) ("Runs Cucumber Scenarios")</a></td><td class="numi">19</td><td>1598328747875</td><td class="numi">18554</td></tr><tr class="passedodd"><td><a href="#m24"><b>runScenario</b> (cucumber) ("Runs Cucumber Scenarios")</a></td><td class="numi">19</td><td>1598328747875</td><td class="numi">18554</td></tr><tr class="passedodd"><td><a href="#m25"><b>runScenario</b> (cucumber) ("Runs Cucumber Scenarios")</a></td><td class="numi">19</td><td>1598328747875</td><td class="numi">18554</td></tr><tr class="passedodd"><td><a href="#m26"><b>runScenario</b> (cucumber) ("Runs Cucumber Scenarios")</a></td><td class="numi">19</td><td>1598328747875</td><td class="numi">18554</td></tr><tr class="passedodd"><td><a href="#m27"><b>runScenario</b> (cucumber) ("Runs Cucumber Scenarios")</a></td><td class="numi">19</td><td>1598328747875</td><td class="numi">18554</td></tr><tr class="passedodd"><td><a href="#m28"><b>runScenario</b> (cucumber) ("Runs Cucumber Scenarios")</a></td><td class="numi">19</td><td>1598328747875</td><td class="numi">18554</td></tr><tr class="passedodd"><td><a href="#m29"><b>runScenario</b> (cucumber) ("Runs Cucumber Scenarios")</a></td><td class="numi">19</td><td>1598328747875</td><td class="numi">18554</td></tr><tr class="passedodd"><td><a href="#m30"><b>runScenario</b> (cucumber) ("Runs Cucumber Scenarios")</a></td><td class="numi">19</td><td>1598328747875</td><td class="numi">18554</td></tr><tr class="passedodd"><td><a href="#m31"><b>runScenario</b> (cucumber) ("Runs Cucumber Scenarios")</a></td><td class="numi">19</td><td>1598328747875</td><td class="numi">18554</td></tr><tr class="passedodd"><td><a href="#m32"><b>runScenario</b> (cucumber) ("Runs Cucumber Scenarios")</a></td><td class="numi">19</td><td>1598328747875</td><td class="numi">18554</td></tr><tr class="passedodd"><td><a href="#m33"><b>runScenario</b> (cucumber) ("Runs Cucumber Scenarios")</a></td><td class="numi">19</td><td>1598328747875</td><td class="numi">18554</td></tr><tr class="passedodd"><td><a href="#m34"><b>runScenario</b> (cucumber) ("Runs Cucumber Scenarios")</a></td><td class="numi">19</td><td>1598328747875</td><td class="numi">18554</td></tr><tr class="passedodd"><td><a href="#m35"><b>runScenario</b> (cucumber) ("Runs Cucumber Scenarios")</a></td><td class="numi">19</td><td>1598328747875</td><td class="numi">18554</td></tr><tr class="passedodd"><td><a href="#m36"><b>runScenario</b> (cucumber) ("Runs Cucumber Scenarios")</a></td><td class="numi">19</td><td>1598328747875</td><td class="numi">18554</td></tr><tr class="passedodd"><td><a href="#m37"><b>runScenario</b> (cucumber) ("Runs Cucumber Scenarios")</a></td><td class="numi">19</td><td>1598328747875</td><td class="numi">18554</td></tr><tr class="passedodd"><td><a href="#m38"><b>runScenario</b> (cucumber) ("Runs Cucumber Scenarios")</a></td><td class="numi">19</td><td>1598328747875</td><td class="numi">18554</td></tr><tr class="passedodd"><td><a href="#m39"><b>runScenario</b> (cucumber) ("Runs Cucumber Scenarios")</a></td><td class="numi">19</td><td>1598328747875</td><td class="numi">18554</td></tr><tr class="passedodd"><td><a href="#m40"><b>runScenario</b> (cucumber) ("Runs Cucumber Scenarios")</a></td><td class="numi">19</td><td>1598328747875</td><td class="numi">18554</td></tr><tr class="passedodd"><td><a href="#m41"><b>runScenario</b> (cucumber) ("Runs Cucumber Scenarios")</a></td><td class="numi">19</td><td>1598328747875</td><td class="numi">18554</td></tr><tr class="passedodd"><td><a href="#m42"><b>runScenario</b> (cucumber) ("Runs Cucumber Scenarios")</a></td><td class="numi">19</td><td>1598328747875</td><td class="numi">18554</td></tr><tr class="passedodd"><td><a href="#m43"><b>runScenario</b> (cucumber) ("Runs Cucumber Scenarios")</a></td><td class="numi">19</td><td>1598328747875</td><td class="numi">18554</td></tr><tr class="passedodd"><td><a href="#m44"><b>runScenario</b> (cucumber) ("Runs Cucumber Scenarios")</a></td><td class="numi">19</td><td>1598328747875</td><td class="numi">18554</td></tr>
+</table>
+<h1>API Test Cases</h1>
+<a id="m1"></a><h2>cucumberOptions.TestRunner:runScenario</h2>
+<table cellspacing=0 cellpadding=0 class="param">
+<tr><th style="padding-left:1em;padding-right:1em">Parameter #1</th><th style="padding-left:1em;padding-right:1em">Parameter #2</th></tr>
+<tr><td style="padding-left:.5em;padding-right:2em">&quot;Verify user is able to add a book successfully&quot;</td>
+<td style="padding-left:.5em;padding-right:2em">&quot;Optional[Test Cases for POST Liabrary API]&quot;</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="2">
+<p>expected:&lt;200&gt; but was:&lt;404&gt;</p>
+org.junit.Assert.fail(Assert.java:93)
+<br/>at org.junit.Assert.failNotEquals(Assert.java:647)
+<br/>at org.junit.Assert.assertEquals(Assert.java:128)
+<br/>at org.junit.Assert.assertEquals(Assert.java:472)
+<br/>at org.junit.Assert.assertEquals(Assert.java:456)
+<br/>at utility.CommonRest.verifyStatusCode(CommonRest.java:246)
+<br/>at StepDefinations.Common_Step_definations.verifyStatusCode(Common_Step_definations.java:41)
+<br/>at ?.status code 200 should be displayed(file:///C:/Users/sdhawan/API_Project/RESTAPIFRAMEWORK/src/test/java/TestCases/Postman_POST_Liabrary_API.feature:7)
+<br/>1 lines not shown
+</td></tr>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m2"></a><h2>cucumberOptions.TestRunner:runScenario</h2>
+<table cellspacing=0 cellpadding=0 class="param">
+<tr><th style="padding-left:1em;padding-right:1em">Parameter #1</th><th style="padding-left:1em;padding-right:1em">Parameter #2</th></tr>
+<tr><td style="padding-left:.5em;padding-right:2em">&quot;Verify error message is displayed for wrong place id&quot;</td>
+<td style="padding-left:.5em;padding-right:2em">&quot;Optional[Test Cases for GET Google API]&quot;</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="2">
+<p>expected:&lt;404&gt; but was:&lt;200&gt;</p>
+org.junit.Assert.fail(Assert.java:93)
+<br/>at org.junit.Assert.failNotEquals(Assert.java:647)
+<br/>at org.junit.Assert.assertEquals(Assert.java:128)
+<br/>at org.junit.Assert.assertEquals(Assert.java:472)
+<br/>at org.junit.Assert.assertEquals(Assert.java:456)
+<br/>at utility.CommonRest.verifyStatusCode(CommonRest.java:246)
+<br/>at StepDefinations.Common_Step_definations.verifyStatusCode(Common_Step_definations.java:41)
+<br/>at ?.status code 404 should be displayed(file:///C:/Users/sdhawan/API_Project/RESTAPIFRAMEWORK/src/test/java/TestCases/Postman_GET_Google_API.feature:17)
+<br/>1 lines not shown
+</td></tr>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m3"></a><h2>cucumberOptions.TestRunner:runScenario</h2>
+<table cellspacing=0 cellpadding=0 class="param">
+<tr><th style="padding-left:1em;padding-right:1em">Parameter #1</th><th style="padding-left:1em;padding-right:1em">Parameter #2</th></tr>
+<tr><td style="padding-left:.5em;padding-right:2em">&quot;Verify Positive Scenario Successfull for PUT Request&quot;</td>
+<td style="padding-left:.5em;padding-right:2em">&quot;Optional[Test Cases for PUT Google API]&quot;</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="2">
+<p>expected:&lt;200&gt; but was:&lt;404&gt;</p>
+org.junit.Assert.fail(Assert.java:93)
+<br/>at org.junit.Assert.failNotEquals(Assert.java:647)
+<br/>at org.junit.Assert.assertEquals(Assert.java:128)
+<br/>at org.junit.Assert.assertEquals(Assert.java:472)
+<br/>at org.junit.Assert.assertEquals(Assert.java:456)
+<br/>at utility.CommonRest.verifyStatusCode(CommonRest.java:246)
+<br/>at StepDefinations.Common_Step_definations.verifyStatusCode(Common_Step_definations.java:41)
+<br/>at ?.status code 200 should be displayed(file:///C:/Users/sdhawan/API_Project/RESTAPIFRAMEWORK/src/test/java/TestCases/Postman_PUT_Google_API.feature:7)
+<br/>1 lines not shown
+</td></tr>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m4"></a><h2>cucumberOptions.TestRunner:runScenario</h2>
+<table cellspacing=0 cellpadding=0 class="param">
+<tr><th style="padding-left:1em;padding-right:1em">Parameter #1</th><th style="padding-left:1em;padding-right:1em">Parameter #2</th></tr>
+<tr><td style="padding-left:.5em;padding-right:2em">&quot;Verify user is able get a book details by ID&quot;</td>
+<td style="padding-left:.5em;padding-right:2em">&quot;Optional[Test Cases for GET Liabrary API]&quot;</td>
+</tr>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m5"></a><h2>cucumberOptions.TestRunner:runScenario</h2>
+<table cellspacing=0 cellpadding=0 class="param">
+<tr><th style="padding-left:1em;padding-right:1em">Parameter #1</th><th style="padding-left:1em;padding-right:1em">Parameter #2</th></tr>
+<tr><td style="padding-left:.5em;padding-right:2em">&quot;Verify error message is displayed for wrong Password&quot;</td>
+<td style="padding-left:.5em;padding-right:2em">&quot;Optional[Test Cases for Generate Token API]&quot;</td>
+</tr>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m6"></a><h2>cucumberOptions.TestRunner:runScenario</h2>
+<table cellspacing=0 cellpadding=0 class="param">
+<tr><th style="padding-left:1em;padding-right:1em">Parameter #1</th><th style="padding-left:1em;padding-right:1em">Parameter #2</th></tr>
+<tr><td style="padding-left:.5em;padding-right:2em">&quot;Verify User Not Found error is displayed for wrong UserName and Password&quot;</td>
+<td style="padding-left:.5em;padding-right:2em">&quot;Optional[Test Cases for POST Authorize Account API]&quot;</td>
+</tr>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m7"></a><h2>cucumberOptions.TestRunner:runScenario</h2>
+<table cellspacing=0 cellpadding=0 class="param">
+<tr><th style="padding-left:1em;padding-right:1em">Parameter #1</th><th style="padding-left:1em;padding-right:1em">Parameter #2</th></tr>
+<tr><td style="padding-left:.5em;padding-right:2em">&quot;Verify book details is not diaplyed for wrong ID&quot;</td>
+<td style="padding-left:.5em;padding-right:2em">&quot;Optional[Test Cases for GET Liabrary API]&quot;</td>
+</tr>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m8"></a><h2>cucumberOptions.TestRunner:runScenario</h2>
+<table cellspacing=0 cellpadding=0 class="param">
+<tr><th style="padding-left:1em;padding-right:1em">Parameter #1</th><th style="padding-left:1em;padding-right:1em">Parameter #2</th></tr>
+<tr><td style="padding-left:.5em;padding-right:2em">&quot;Verify Positive Scenario Successfull for GET Request&quot;</td>
+<td style="padding-left:.5em;padding-right:2em">&quot;Optional[Test Cases for GET Google API]&quot;</td>
+</tr>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m9"></a><h2>cucumberOptions.TestRunner:runScenario</h2>
+<table cellspacing=0 cellpadding=0 class="param">
+<tr><th style="padding-left:1em;padding-right:1em">Parameter #1</th><th style="padding-left:1em;padding-right:1em">Parameter #2</th></tr>
+<tr><td style="padding-left:.5em;padding-right:2em">&quot;Verify Positive Scenario Successfull for POST Request&quot;</td>
+<td style="padding-left:.5em;padding-right:2em">&quot;Optional[Test Cases for POST Google API]&quot;</td>
+</tr>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m10"></a><h2>cucumberOptions.TestRunner:runScenario</h2>
+<table cellspacing=0 cellpadding=0 class="param">
+<tr><th style="padding-left:1em;padding-right:1em">Parameter #1</th><th style="padding-left:1em;padding-right:1em">Parameter #2</th></tr>
+<tr><td style="padding-left:.5em;padding-right:2em">&quot;Verify all details of Books&quot;</td>
+<td style="padding-left:.5em;padding-right:2em">&quot;Optional[Test Cases for GET Book Details]&quot;</td>
+</tr>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m11"></a><h2>cucumberOptions.TestRunner:runScenario</h2>
+<table cellspacing=0 cellpadding=0 class="param">
+<tr><th style="padding-left:1em;padding-right:1em">Parameter #1</th><th style="padding-left:1em;padding-right:1em">Parameter #2</th></tr>
+<tr><td style="padding-left:.5em;padding-right:2em">&quot;Verify error message is displayed for Body Without UserName and Password&quot;</td>
+<td style="padding-left:.5em;padding-right:2em">&quot;Optional[Test Cases for Generate Token API]&quot;</td>
+</tr>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m12"></a><h2>cucumberOptions.TestRunner:runScenario</h2>
+<table cellspacing=0 cellpadding=0 class="param">
+<tr><th style="padding-left:1em;padding-right:1em">Parameter #1</th><th style="padding-left:1em;padding-right:1em">Parameter #2</th></tr>
+<tr><td style="padding-left:.5em;padding-right:2em">&quot;Verify user is able get a book details by author name&quot;</td>
+<td style="padding-left:.5em;padding-right:2em">&quot;Optional[Test Cases for GET Liabrary API]&quot;</td>
+</tr>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m13"></a><h2>cucumberOptions.TestRunner:runScenario</h2>
+<table cellspacing=0 cellpadding=0 class="param">
+<tr><th style="padding-left:1em;padding-right:1em">Parameter #1</th><th style="padding-left:1em;padding-right:1em">Parameter #2</th></tr>
+<tr><td style="padding-left:.5em;padding-right:2em">&quot;Verify Positive Scenario for Authorize Account&quot;</td>
+<td style="padding-left:.5em;padding-right:2em">&quot;Optional[Test Cases for POST Authorize Account API]&quot;</td>
+</tr>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m14"></a><h2>cucumberOptions.TestRunner:runScenario</h2>
+<table cellspacing=0 cellpadding=0 class="param">
+<tr><th style="padding-left:1em;padding-right:1em">Parameter #1</th><th style="padding-left:1em;padding-right:1em">Parameter #2</th></tr>
+<tr><td style="padding-left:.5em;padding-right:2em">&quot;Verify error message is displayed when Username and Password is not passed in body&quot;</td>
+<td style="padding-left:.5em;padding-right:2em">&quot;Optional[Test Cases for POST Authorize Account API]&quot;</td>
+</tr>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m15"></a><h2>cucumberOptions.TestRunner:runScenario</h2>
+<table cellspacing=0 cellpadding=0 class="param">
+<tr><th style="padding-left:1em;padding-right:1em">Parameter #1</th><th style="padding-left:1em;padding-right:1em">Parameter #2</th></tr>
+<tr><td style="padding-left:.5em;padding-right:2em">&quot;Verify Positive Scenario Successfull for POST Request&quot;</td>
+<td style="padding-left:.5em;padding-right:2em">&quot;Optional[Test Cases for POST Google API]&quot;</td>
+</tr>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m16"></a><h2>cucumberOptions.TestRunner:runScenario</h2>
+<table cellspacing=0 cellpadding=0 class="param">
+<tr><th style="padding-left:1em;padding-right:1em">Parameter #1</th><th style="padding-left:1em;padding-right:1em">Parameter #2</th></tr>
+<tr><td style="padding-left:.5em;padding-right:2em">&quot;Verify erroe message for wrong place id&quot;</td>
+<td style="padding-left:.5em;padding-right:2em">&quot;Optional[Test Cases for PUT Google API]&quot;</td>
+</tr>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m17"></a><h2>cucumberOptions.TestRunner:runScenario</h2>
+<table cellspacing=0 cellpadding=0 class="param">
+<tr><th style="padding-left:1em;padding-right:1em">Parameter #1</th><th style="padding-left:1em;padding-right:1em">Parameter #2</th></tr>
+<tr><td style="padding-left:.5em;padding-right:2em">&quot;Verify error message is displayed for wrong UserName&quot;</td>
+<td style="padding-left:.5em;padding-right:2em">&quot;Optional[Test Cases for Generate Token API]&quot;</td>
+</tr>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m18"></a><h2>cucumberOptions.TestRunner:runScenario</h2>
+<table cellspacing=0 cellpadding=0 class="param">
+<tr><th style="padding-left:1em;padding-right:1em">Parameter #1</th><th style="padding-left:1em;padding-right:1em">Parameter #2</th></tr>
+<tr><td style="padding-left:.5em;padding-right:2em">&quot;Verify Positive Scenario Successfull for POST Request&quot;</td>
+<td style="padding-left:.5em;padding-right:2em">&quot;Optional[Test Cases for POST Google API]&quot;</td>
+</tr>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m19"></a><h2>cucumberOptions.TestRunner:runScenario</h2>
+<table cellspacing=0 cellpadding=0 class="param">
+<tr><th style="padding-left:1em;padding-right:1em">Parameter #1</th><th style="padding-left:1em;padding-right:1em">Parameter #2</th></tr>
+<tr><td style="padding-left:.5em;padding-right:2em">&quot;Verify user is able to retrive book details based on ISBN number&quot;</td>
+<td style="padding-left:.5em;padding-right:2em">&quot;Optional[Test Cases for GET Book Details]&quot;</td>
+</tr>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m20"></a><h2>cucumberOptions.TestRunner:runScenario</h2>
+<table cellspacing=0 cellpadding=0 class="param">
+<tr><th style="padding-left:1em;padding-right:1em">Parameter #1</th><th style="padding-left:1em;padding-right:1em">Parameter #2</th></tr>
+<tr><td style="padding-left:.5em;padding-right:2em">&quot;Verify book details is not diaplyed for wrong author name&quot;</td>
+<td style="padding-left:.5em;padding-right:2em">&quot;Optional[Test Cases for GET Liabrary API]&quot;</td>
+</tr>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m21"></a><h2>cucumberOptions.TestRunner:runScenario</h2>
+<table cellspacing=0 cellpadding=0 class="param">
+<tr><th style="padding-left:1em;padding-right:1em">Parameter #1</th><th style="padding-left:1em;padding-right:1em">Parameter #2</th></tr>
+<tr><td style="padding-left:.5em;padding-right:2em">&quot;Verify Positive Scenario for Generate Token&quot;</td>
+<td style="padding-left:.5em;padding-right:2em">&quot;Optional[Test Cases for Generate Token API]&quot;</td>
+</tr>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m22"></a><h2>cucumberOptions.TestRunner:runScenario</h2>
+<table cellspacing=0 cellpadding=0 class="param">
+<tr><th style="padding-left:1em;padding-right:1em">Parameter #1</th><th style="padding-left:1em;padding-right:1em">Parameter #2</th></tr>
+<tr><td style="padding-left:.5em;padding-right:2em">&quot;Verify error message is displayed if book is alrady present&quot;</td>
+<td style="padding-left:.5em;padding-right:2em">&quot;Optional[Test Cases for POST Liabrary API]&quot;</td>
+</tr>
+<p class="totop"><a href="#summary">back to summary</a></p>
+</body></html>

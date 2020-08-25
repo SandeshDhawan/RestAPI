@@ -1,0 +1,39 @@
+{
+	"Payload": [
+	{
+		"PayloadId_001": [
+			{"Description": "Post Request for Authorized Account"},
+			{"RequestType": "POST"},
+			{"ContentType": "application/json"},
+			{"Endpoint": "/Account/v1/Authorized"},
+			{
+				"Body": {
+ 					"userName": "Test",
+  					"password": "Test"
+				}
+			}
+		]
+	},
+	{
+		"PayloadId_002": [
+			{"Description": "Post Request for Authorized Account"},
+			{"RequestType": "POST"},
+			{"ContentType": "application/json"},
+			{"Endpoint": "/Account/v1/Authorized"}
+		]
+	},
+	{
+		"PayloadId_003": [
+			{"Description": "Post Request for Authorized Account"},
+			{"RequestType": "POST"},
+			{"ContentType": "application/json"},
+			{"Endpoint": "/Account/v1/Authorized"},
+			{
+				"Body": {
+ 					"userName": "TOOLSQA-Test",
+  					"password": "Test@@123"
+				}
+			}
+		]
+	}
+]}

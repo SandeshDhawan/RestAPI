@@ -1,0 +1,13 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 22, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 21.05 s <<< FAILURE! - in TestSuite
+runScenario(cucumberOptions.TestRunner)  Time elapsed: 0.224 s  <<< FAILURE!
+java.lang.AssertionError: expected:<404> but was:<200>
+
+runScenario(cucumberOptions.TestRunner)  Time elapsed: 0.215 s  <<< FAILURE!
+java.lang.AssertionError: expected:<200> but was:<404>
+
+runScenario(cucumberOptions.TestRunner)  Time elapsed: 0.2 s  <<< FAILURE!
+java.lang.AssertionError: expected:<200> but was:<404>
+
