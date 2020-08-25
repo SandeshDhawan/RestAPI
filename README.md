@@ -36,7 +36,9 @@ In testng.xml provided cucumberOptions.TestRunner
   
 ## utility:-
   1)CommonRest.java consist of all common methods which are necessary for reading JSON,creating endpoint,sending API Request,verifying status code and verifying all fields generated in Response
+  
   2)Config.prperties consist of all different endpoint for all services.
+  
   3)log4j2.properties have details in which format logs should be generated 
 
 # src/test/java includes below Packages:-
@@ -46,11 +48,17 @@ In testng.xml provided cucumberOptions.TestRunner
 
 ## TestCases:-
   1)All Feature Files are added in this package
+  
   2)In Feature File passing path of parameter and which payload to read.
+  
   3)Endpoint name as per Config.prperties.
+  
   4)which Method(POST,PUT,GET,DELETE) to peroform.
+  
   5)Status Code after processing endpoint
+  
   6)generated fields in response can be passed in fields section
+  
   7)Expected values are passed in values section.
 
 ## TestData:-
