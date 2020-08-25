@@ -44,7 +44,7 @@ In testng.xml provided cucumberOptions.TestRunner
 # src/test/java includes below Packages:-
 
 ## StepDefinations:-
-  1)Common_Step_definations includes all step definations
+  Common_Step_definations includes all step definations that we have defined in our feature file
 
 ## TestCases:-
   1)All Feature Files are added in this package
@@ -62,12 +62,12 @@ In testng.xml provided cucumberOptions.TestRunner
   7)Expected values are passed in values section.
 
 ## TestData:-
-  1)Different Payload File and metntioned all required test data
+  Different Payload File and metntioned all required test data
 
 ## Logs
-  1)propertieslogs.log will have all logs generated while execution of test cases
+  propertieslogs.log will have all logs generated while execution of test cases
 
 ## target
-  1)Cucumber report will be generated in cucumber-html-reports folder
+  Cucumber report will be generated in cucumber-html-reports folder
   
   
