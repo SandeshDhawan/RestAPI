@@ -5,11 +5,8 @@ This is basic level test automation framework created using Cucumber - Java
 Framework include below dependency in POM.xml
 
 1)maven-surefire-plugin
-
 2)maven-cucumber-reporting
-
 3)testng
-
 4)cucumber-java
 
 5)cucumber-testng
