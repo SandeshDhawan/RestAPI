@@ -15,21 +15,20 @@ groovy-all
 log4j-api
 log4j-core
 
-In testng.xml provided cucumberOptions.TestRunner
+# In testng.xml provided cucumberOptions.TestRunner
 
-src/main/java includes below Packages:-
+# src/main/java includes below Packages:-
 
-1)cucumberOptions:-
-  .Consist of TestRunner Class where Feature,glue path is provided. 
-  .provided path for generating cucumber-report.json in plugin parameter.
+# cucumberOptions:-
+  1)Consist of TestRunner Class where Feature,glue path is provided. 
+  2)provided path for generating cucumber-report.json in plugin parameter.
   
-2)utility:-
-  .CommonRest.java consist of all common methods which are necessary for reading JSON,creating endpoint,sending API Request,verifying status code and verifying all fiedls generated
-   in Response
-  .Config.prperties consist of all different endpoint for all services.
-  .log4j2.properties have details in which format logs should be generated 
+# utility:-
+  1)CommonRest.java consist of all common methods which are necessary for reading JSON,creating endpoint,sending API Request,verifying status code and verifying all fields generated in Response
+  2)Config.prperties consist of all different endpoint for all services.
+  3)log4j2.properties have details in which format logs should be generated 
 
-src/test/java includes below Packages:-
+# src/test/java includes below Packages:-
 
 1)StepDefinations:-
   .Common_Step_definations includes all step definations
