@@ -18,6 +18,7 @@ log4j-core
 In testng.xml provided cucumberOptions.TestRunner
 
 src/main/java includes below Packages:-
+
 1)cucumberOptions:-
   .Consist of TestRunner Class where Feature,glue path is provided. 
   .provided path for generating cucumber-report.json in plugin parameter.
@@ -29,6 +30,7 @@ src/main/java includes below Packages:-
   .log4j2.properties have details in which format logs should be generated 
 
 src/test/java includes below Packages:-
+
 1)StepDefinations:-
   .Common_Step_definations includes all step definations
 
