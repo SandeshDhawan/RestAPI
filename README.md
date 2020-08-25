@@ -4,23 +4,34 @@ This is basic level test automation framework created using Cucumber - Java
 
 Framework include below dependency in POM.xml
 
-maven-surefire-plugin
-maven-cucumber-reporting
-testng
-cucumber-java
-cucumber-testng
-rest-assured
-json
-groovy-all
-log4j-api
-log4j-core
+1)maven-surefire-plugin
 
-## In testng.xml provided cucumberOptions.TestRunner
+2)maven-cucumber-reporting
+
+3)testng
+
+4)cucumber-java
+
+5)cucumber-testng
+
+6)rest-assured
+
+7)json
+
+8)groovy-all
+
+9)log4j-api
+
+10)log4j-core
+
+
+In testng.xml provided cucumberOptions.TestRunner
 
 ### src/main/java includes below Packages:-
 
 # cucumberOptions:-
   1)Consist of TestRunner Class where Feature,glue path is provided. 
+  
   2)provided path for generating cucumber-report.json in plugin parameter.
   
 # utility:-
