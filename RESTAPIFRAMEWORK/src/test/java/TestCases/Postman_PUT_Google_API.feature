@@ -11,7 +11,7 @@ Feature: Test Cases for PUT Google API
       | Put_Google_API_Payload.json;PayloadId_001 | Google_API | PUT    |         200 |
 
   @Regression
-  Scenario Outline: Verify erroe message for wrong place id
+  Scenario Outline: Verify error message for wrong place id
     Given User Reads a User payload <User_Payload> for <endpoint>
     When User sends a api request for method <Method>
     Then status code <Status_Code> should be displayed
