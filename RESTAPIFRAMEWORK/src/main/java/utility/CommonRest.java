@@ -34,6 +34,7 @@ public class CommonRest {
 		logger.info(
 				"***************************************Started Execution of Test Cases****************************************");
 
+		
 		Properties prop = new Properties();
 		FileInputStream file;
 		try {
