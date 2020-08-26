@@ -1,0 +1,673 @@
+
+
+    <!--
+    Copyright 2019 trivago N.V.
+
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+    -->
+    <!DOCTYPE html>
+    <html lang="en">
+    <base href="./../..">
+    <head title="Cluecumber Report - Scenarios with Step">
+        <title>Cluecumber Report - Scenarios with Step</title>
+
+<meta charset="utf-8">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<meta http-equiv="Content-Security-Policy" content="default-src *  data: blob: 'unsafe-inline' 'unsafe-eval';
+script-src * data: blob: 'unsafe-inline' 'unsafe-eval';
+connect-src * data: blob: 'unsafe-inline';
+img-src * data: blob: 'unsafe-inline';
+frame-src * data: blob: ;
+style-src * data: blob: 'unsafe-inline';
+font-src * data: blob: 'unsafe-inline';"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="description" content="Cluecumber Report">
+<meta name="author" content="Cluecumber Report Plugin version 2.5.0">
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+<link rel="stylesheet" href="css/datatables.min.css">
+<link rel="stylesheet" href="css/dataTables.bootstrap4.min.css">
+<link rel="stylesheet" href="css/jquery.fancybox.min.css"/>
+<link rel="stylesheet" href="css/cluecumber.css" type="text/css">
+<link rel="stylesheet" href="css/cluecumber-custom.css"/>
+<link rel="stylesheet" href="css/cluecumber-additional.css"/>
+<script src="js/jquery.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/datatables.min.js"></script>
+<script src="js/jquery.fancybox.min.js"></script>
+<script src="js/Chart.bundle.min.js"></script>
+
+<script>
+    $(document).ready(function () {
+            // Data tables
+            $('.renderAsDataTable').on('draw.dt', function () {
+                $('[data-toggle="tooltip"]').tooltip();
+            }).DataTable({
+                "oLanguage": {
+                    "sSearch": "Search:"
+                },
+                "pageLength": 25,
+                "responsive": true
+            });
+
+            $('.collapse').on('shown.bs.collapse', function (e) {
+                $(e.target).find("iframe").each(function (index, iframe) {
+                    resizeIframe(iframe);
+                })
+            });
+
+            // Lightbox
+            $("a.grouped_elements").fancybox();
+
+            // Tool tips
+            $('[data-toggle="tooltip"]').tooltip();
+
+            // Chart
+            var canvas = document.getElementById('chart-area');
+            var ctx = canvas.getContext("2d");
+            var chart = new Chart(ctx, {
+  "data": {
+    "labels": [
+      "passed",
+      "failed",
+      "skipped"
+    ],
+    "datasets": [
+      {
+        "data": [
+          17,
+          1,
+          0
+        ],
+        "backgroundColor": [
+          "rgba(40, 167, 69, 1.000)",
+          "rgba(220, 53, 69, 1.000)",
+          "rgba(255, 193, 7, 1.000)"
+        ]
+      }
+    ]
+  },
+  "options": {
+    "events": [
+      "click",
+      "mousemove"
+    ]
+  },
+  "type": "pie"
+});
+
+            var original;
+            if (chart.config.type === "pie") {
+                original = Chart.defaults.pie.legend.onClick;
+            } else {
+                original = Chart.defaults.global.legend.onClick;
+            }
+
+            chart.options.onClick = function (evt, elements) {
+                if (chart.config.type !== "pie") return;
+                chartArea = elements[0];
+                if (chartArea === undefined) return;
+                chartArea.hidden = !chartArea.hidden;
+                chart.update();
+                toggleVisibilityByStatus(chartArea._model.label, !chartArea.hidden)
+            };
+
+            chart.options.legend.onClick = function (evt, label) {
+                original.call(this, evt, label);
+                toggleVisibilityByStatus(label.text, label.hidden);
+            };
+
+            function toggleVisibilityByStatus(statusText, show) {
+                var card = $("#card_" + statusText);
+                if (card !== undefined) {
+                    if (show) {
+                        card.show();
+                    } else {
+                        card.hide();
+                    }
+                }
+
+                var row = $(".table-row-" + statusText);
+                if (row !== undefined) {
+                    if (show) {
+                        row.show();
+                    } else {
+                        row.hide();
+                    }
+                }
+            }
+
+
+            if (false) {
+                $(".btn-outline-secondary[data-cluecumber-item='before-after-hooks-button']").click();
+            }
+            if (false) {
+                $(".btn-outline-secondary[data-cluecumber-item='step-hooks-button']").click();
+            }
+            if (false) {
+                $(".btn-outline-secondary[data-cluecumber-item='doc-strings-button']").click();
+            }
+        }
+    );
+
+    function resizeIframe(iframe) {
+        iframe.style.height = (iframe.contentWindow.document.body.scrollHeight + 25) + 'px';
+    }
+</script>    </head>
+    <body>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                                <a class="nav-link " href="pages/scenario-summary.html">All Scenarios</a>
+                    </li>
+                    <li class="nav-item">
+                                <a class="nav-link " href="pages/scenario-sequence.html">Scenario Sequence</a>
+                    </li>
+                    <li class="nav-item">
+                                <a class="nav-link " href="pages/tag-summary.html">All Tags</a>
+                    </li>
+                    <li class="nav-item">
+                                <a class="nav-link text-white" href="pages/step-summary.html">All Steps</a>
+                    </li>
+                    <li class="nav-item">
+                                <a class="nav-link " href="pages/feature-summary.html">All Features</a>
+                    </li>
+            </ul>
+            <span class="text-light">2020-08-26 10:12:26</span>
+        </div>
+    </nav>
+    <main role="main" class="container">
+        <div class="cluecumber-template">
+            <div class="pb-2 mt-4 mb-2 border-bottom">
+                    <h3>Scenarios using Step 'verify for field {} value {} is generated in response'</h3>
+            </div>
+
+
+    <div class="row" id="scenario-summary">
+    <div class="col-sm-6  h-auto" data-cluecumber-item="card">
+        <div class="card h-100">
+                <div class="card-header">Scenario Results</div>
+            <div class="card-body">
+    <div id="canvas-holder" class="w-100 text-center" style="min-height: 15rem;" data-cluecumber-item="chart">
+        <canvas id="chart-area" class="w-100"></canvas>
+    </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-3  h-auto" data-cluecumber-item="card">
+        <div class="card h-100">
+                <div class="card-header">Test Suite Time</div>
+            <div class="card-body">
+            <ul class="list-group list-group-flush">
+                    <li class="list-group-item" data-cluecumber-item="total-start">
+                        Started on:<br>2020-08-26 10:12:02</li>
+                    <li class="list-group-item" data-cluecumber-item="total-end">
+                        Ended on:<br>2020-08-26 10:12:19</li>
+                <li class="list-group-item" data-cluecumber-item="total-runtime">
+                    Test Runtime:<br>0m 17s 296ms
+                </li>
+            </ul>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-3  h-auto" data-cluecumber-item="card">
+        <div class="card h-100">
+                <div class="card-header">Test Suite Summary</div>
+            <div class="card-body">
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item" data-cluecumber-item="scenario-summary">
+                    18         Scenarios
+
+                </li>
+                <li class="list-group-item" data-cluecumber-item="scenario-summary">
+                        <a href="javascript:"
+                           onclick="document.location.hash='anchor-passed';">17
+                            passed</a>     <i class="color-passed cluecumber-icon icon-passed" data-toggle="tooltip"
+       title="passed"><span style="display:none">passed</span></i>
+
+                        <br>
+                        <a href="javascript:"
+                           onclick="document.location.hash='anchor-failed';">1
+                            failed</a>     <i class="color-failed cluecumber-icon icon-failed" data-toggle="tooltip"
+       title="failed"><span style="display:none">failed</span></i>
+
+                        <br>
+                        <a href="javascript:"
+                           onclick="document.location.hash='anchor-skipped';">0
+                            skipped</a>     <i class="color-skipped cluecumber-icon icon-skipped" data-toggle="tooltip"
+       title="skipped"><span style="display:none">skipped</span></i>
+
+                </li>
+            </ul>
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+        <a class="anchor" id="anchor-failed"></a>
+        <div class="row" id="card_failed" data-cluecumber-item="scenario-summary-table">
+            <div class=" col-sm-12">
+                <div class="card">
+
+                            <div class="card-header border-color-failed">
+                                1
+        failed Scenario
+    <i class="color-failed cluecumber-icon icon-failed" data-toggle="tooltip"
+       title="failed"><span style="display:none">failed</span></i>
+                            </div>
+
+                    <div class="card-body">
+                        <table id="results_failed" class="table table-hover renderAsDataTable">
+                            <thead>
+                            <tr>
+                                <th class="text-left">Feature</th>
+                                <th class="text-left">Scenario</th>
+                                <th>Started</th>
+                                <th>Duration</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+
+
+
+
+
+
+
+                                        <tr class="table-row-failed">
+                                            <td class="text-left">
+                                                <span data-toggle="tooltip" title="file:src/test/java/TestCases/Postman_POST_Liabrary_API.feature">
+                                                    <a href="pages/feature-scenarios/feature_6.html">Test Cases for POST Liabrary API</a>
+                                                </span>
+                                            </td>
+                                            <td class="text-left">
+                                                <a href="pages/scenario-detail/scenario_19.html"
+                                                   style="word-break: break-all">Verify user is able to add a book successfully</a>
+                                            </td>
+                                            <td class="text-center small" data-order="2020-08-26T04:42:16.533Z">
+                                                2020-08-26<br>10:12:16
+                                            </td>
+                                            <td class="text-right small"
+                                                data-order="121,000,000">
+                                                <span class="nobr">0m 00s 121ms</span>
+                                            </td>
+                                        </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <a class="anchor" id="anchor-passed"></a>
+        <div class="row" id="card_passed" data-cluecumber-item="scenario-summary-table">
+            <div class=" col-sm-12">
+                <div class="card">
+
+                            <div class="card-header border-color-passed">
+                                17
+        passed Scenarios
+    <i class="color-passed cluecumber-icon icon-passed" data-toggle="tooltip"
+       title="passed"><span style="display:none">passed</span></i>
+                            </div>
+
+                    <div class="card-body">
+                        <table id="results_passed" class="table table-hover renderAsDataTable">
+                            <thead>
+                            <tr>
+                                <th class="text-left">Feature</th>
+                                <th class="text-left">Scenario</th>
+                                <th>Started</th>
+                                <th>Duration</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+
+                                        <tr class="table-row-passed">
+                                            <td class="text-left">
+                                                <span data-toggle="tooltip" title="file:src/test/java/TestCases/GET_Book_Details_API.feature">
+                                                    <a href="pages/feature-scenarios/feature_0.html">Test Cases for GET Book Details</a>
+                                                </span>
+                                            </td>
+                                            <td class="text-left">
+                                                <a href="pages/scenario-detail/scenario_1.html"
+                                                   style="word-break: break-all">Verify all details of Books</a>
+                                            </td>
+                                            <td class="text-center small" data-order="2020-08-26T04:42:02.645Z">
+                                                2020-08-26<br>10:12:02
+                                            </td>
+                                            <td class="text-right small"
+                                                data-order="5,176,000,000">
+                                                <span class="nobr">0m 05s 176ms</span>
+                                            </td>
+                                        </tr>
+                                        <tr class="table-row-passed">
+                                            <td class="text-left">
+                                                <span data-toggle="tooltip" title="file:src/test/java/TestCases/GET_Book_Details_API.feature">
+                                                    <a href="pages/feature-scenarios/feature_0.html">Test Cases for GET Book Details</a>
+                                                </span>
+                                            </td>
+                                            <td class="text-left">
+                                                <a href="pages/scenario-detail/scenario_2.html"
+                                                   style="word-break: break-all">Verify user is able to retrive book details based on ISBN number</a>
+                                            </td>
+                                            <td class="text-center small" data-order="2020-08-26T04:42:07.865Z">
+                                                2020-08-26<br>10:12:07
+                                            </td>
+                                            <td class="text-right small"
+                                                data-order="1,029,000,000">
+                                                <span class="nobr">0m 01s 029ms</span>
+                                            </td>
+                                        </tr>
+
+                                        <tr class="table-row-passed">
+                                            <td class="text-left">
+                                                <span data-toggle="tooltip" title="file:src/test/java/TestCases/POST_Authorize_Account_API.feature">
+                                                    <a href="pages/feature-scenarios/feature_1.html">Test Cases for POST Authorize Account API</a>
+                                                </span>
+                                            </td>
+                                            <td class="text-left">
+                                                <a href="pages/scenario-detail/scenario_4.html"
+                                                   style="word-break: break-all">Verify User Not Found error is displayed for wrong UserName and Password</a>
+                                            </td>
+                                            <td class="text-center small" data-order="2020-08-26T04:42:09.770Z">
+                                                2020-08-26<br>10:12:09
+                                            </td>
+                                            <td class="text-right small"
+                                                data-order="852,000,000">
+                                                <span class="nobr">0m 00s 852ms</span>
+                                            </td>
+                                        </tr>
+                                        <tr class="table-row-passed">
+                                            <td class="text-left">
+                                                <span data-toggle="tooltip" title="file:src/test/java/TestCases/POST_Authorize_Account_API.feature">
+                                                    <a href="pages/feature-scenarios/feature_1.html">Test Cases for POST Authorize Account API</a>
+                                                </span>
+                                            </td>
+                                            <td class="text-left">
+                                                <a href="pages/scenario-detail/scenario_5.html"
+                                                   style="word-break: break-all">Verify error message is displayed when Username and Password is not passed in body</a>
+                                            </td>
+                                            <td class="text-center small" data-order="2020-08-26T04:42:10.625Z">
+                                                2020-08-26<br>10:12:10
+                                            </td>
+                                            <td class="text-right small"
+                                                data-order="760,000,000">
+                                                <span class="nobr">0m 00s 760ms</span>
+                                            </td>
+                                        </tr>
+
+                                        <tr class="table-row-passed">
+                                            <td class="text-left">
+                                                <span data-toggle="tooltip" title="file:src/test/java/TestCases/POST_Generate_Token_API.feature">
+                                                    <a href="pages/feature-scenarios/feature_2.html">Test Cases for Generate Token API</a>
+                                                </span>
+                                            </td>
+                                            <td class="text-left">
+                                                <a href="pages/scenario-detail/scenario_6.html"
+                                                   style="word-break: break-all">Verify Positive Scenario for Generate Token</a>
+                                            </td>
+                                            <td class="text-center small" data-order="2020-08-26T04:42:11.387Z">
+                                                2020-08-26<br>10:12:11
+                                            </td>
+                                            <td class="text-right small"
+                                                data-order="805,000,000">
+                                                <span class="nobr">0m 00s 805ms</span>
+                                            </td>
+                                        </tr>
+                                        <tr class="table-row-passed">
+                                            <td class="text-left">
+                                                <span data-toggle="tooltip" title="file:src/test/java/TestCases/POST_Generate_Token_API.feature">
+                                                    <a href="pages/feature-scenarios/feature_2.html">Test Cases for Generate Token API</a>
+                                                </span>
+                                            </td>
+                                            <td class="text-left">
+                                                <a href="pages/scenario-detail/scenario_7.html"
+                                                   style="word-break: break-all">Verify error message is displayed for wrong UserName</a>
+                                            </td>
+                                            <td class="text-center small" data-order="2020-08-26T04:42:12.194Z">
+                                                2020-08-26<br>10:12:12
+                                            </td>
+                                            <td class="text-right small"
+                                                data-order="754,000,000">
+                                                <span class="nobr">0m 00s 754ms</span>
+                                            </td>
+                                        </tr>
+                                        <tr class="table-row-passed">
+                                            <td class="text-left">
+                                                <span data-toggle="tooltip" title="file:src/test/java/TestCases/POST_Generate_Token_API.feature">
+                                                    <a href="pages/feature-scenarios/feature_2.html">Test Cases for Generate Token API</a>
+                                                </span>
+                                            </td>
+                                            <td class="text-left">
+                                                <a href="pages/scenario-detail/scenario_8.html"
+                                                   style="word-break: break-all">Verify error message is displayed for wrong Password</a>
+                                            </td>
+                                            <td class="text-center small" data-order="2020-08-26T04:42:12.953Z">
+                                                2020-08-26<br>10:12:12
+                                            </td>
+                                            <td class="text-right small"
+                                                data-order="857,000,000">
+                                                <span class="nobr">0m 00s 857ms</span>
+                                            </td>
+                                        </tr>
+                                        <tr class="table-row-passed">
+                                            <td class="text-left">
+                                                <span data-toggle="tooltip" title="file:src/test/java/TestCases/POST_Generate_Token_API.feature">
+                                                    <a href="pages/feature-scenarios/feature_2.html">Test Cases for Generate Token API</a>
+                                                </span>
+                                            </td>
+                                            <td class="text-left">
+                                                <a href="pages/scenario-detail/scenario_9.html"
+                                                   style="word-break: break-all">Verify error message is displayed for Body Without UserName and Password</a>
+                                            </td>
+                                            <td class="text-center small" data-order="2020-08-26T04:42:13.814Z">
+                                                2020-08-26<br>10:12:13
+                                            </td>
+                                            <td class="text-right small"
+                                                data-order="785,000,000">
+                                                <span class="nobr">0m 00s 785ms</span>
+                                            </td>
+                                        </tr>
+
+
+                                        <tr class="table-row-passed">
+                                            <td class="text-left">
+                                                <span data-toggle="tooltip" title="file:src/test/java/TestCases/Postman_GET_Liabrary_API.feature">
+                                                    <a href="pages/feature-scenarios/feature_4.html">Test Cases for GET Liabrary API</a>
+                                                </span>
+                                            </td>
+                                            <td class="text-left">
+                                                <a href="pages/scenario-detail/scenario_12.html"
+                                                   style="word-break: break-all">Verify user is able get a book details by author name</a>
+                                            </td>
+                                            <td class="text-center small" data-order="2020-08-26T04:42:14.966Z">
+                                                2020-08-26<br>10:12:14
+                                            </td>
+                                            <td class="text-right small"
+                                                data-order="197,000,000">
+                                                <span class="nobr">0m 00s 197ms</span>
+                                            </td>
+                                        </tr>
+                                        <tr class="table-row-passed">
+                                            <td class="text-left">
+                                                <span data-toggle="tooltip" title="file:src/test/java/TestCases/Postman_GET_Liabrary_API.feature">
+                                                    <a href="pages/feature-scenarios/feature_4.html">Test Cases for GET Liabrary API</a>
+                                                </span>
+                                            </td>
+                                            <td class="text-left">
+                                                <a href="pages/scenario-detail/scenario_13.html"
+                                                   style="word-break: break-all">Verify book details is not diaplyed for wrong author name</a>
+                                            </td>
+                                            <td class="text-center small" data-order="2020-08-26T04:42:15.166Z">
+                                                2020-08-26<br>10:12:15
+                                            </td>
+                                            <td class="text-right small"
+                                                data-order="227,000,000">
+                                                <span class="nobr">0m 00s 227ms</span>
+                                            </td>
+                                        </tr>
+                                        <tr class="table-row-passed">
+                                            <td class="text-left">
+                                                <span data-toggle="tooltip" title="file:src/test/java/TestCases/Postman_GET_Liabrary_API.feature">
+                                                    <a href="pages/feature-scenarios/feature_4.html">Test Cases for GET Liabrary API</a>
+                                                </span>
+                                            </td>
+                                            <td class="text-left">
+                                                <a href="pages/scenario-detail/scenario_14.html"
+                                                   style="word-break: break-all">Verify user is able get a book details by ID</a>
+                                            </td>
+                                            <td class="text-center small" data-order="2020-08-26T04:42:15.396Z">
+                                                2020-08-26<br>10:12:15
+                                            </td>
+                                            <td class="text-right small"
+                                                data-order="203,000,000">
+                                                <span class="nobr">0m 00s 203ms</span>
+                                            </td>
+                                        </tr>
+                                        <tr class="table-row-passed">
+                                            <td class="text-left">
+                                                <span data-toggle="tooltip" title="file:src/test/java/TestCases/Postman_GET_Liabrary_API.feature">
+                                                    <a href="pages/feature-scenarios/feature_4.html">Test Cases for GET Liabrary API</a>
+                                                </span>
+                                            </td>
+                                            <td class="text-left">
+                                                <a href="pages/scenario-detail/scenario_15.html"
+                                                   style="word-break: break-all">Verify book details is not diaplyed for wrong ID</a>
+                                            </td>
+                                            <td class="text-center small" data-order="2020-08-26T04:42:15.601Z">
+                                                2020-08-26<br>10:12:15
+                                            </td>
+                                            <td class="text-right small"
+                                                data-order="177,000,000">
+                                                <span class="nobr">0m 00s 177ms</span>
+                                            </td>
+                                        </tr>
+
+                                        <tr class="table-row-passed">
+                                            <td class="text-left">
+                                                <span data-toggle="tooltip" title="file:src/test/java/TestCases/Postman_POST_Google_API.feature">
+                                                    <a href="pages/feature-scenarios/feature_5.html">Test Cases for POST Google API</a>
+                                                </span>
+                                            </td>
+                                            <td class="text-left">
+                                                <a href="pages/scenario-detail/scenario_16.html"
+                                                   style="word-break: break-all">Verify Positive Scenario Successfull for POST Request</a>
+                                            </td>
+                                            <td class="text-center small" data-order="2020-08-26T04:42:15.780Z">
+                                                2020-08-26<br>10:12:15
+                                            </td>
+                                            <td class="text-right small"
+                                                data-order="267,000,000">
+                                                <span class="nobr">0m 00s 267ms</span>
+                                            </td>
+                                        </tr>
+                                        <tr class="table-row-passed">
+                                            <td class="text-left">
+                                                <span data-toggle="tooltip" title="file:src/test/java/TestCases/Postman_POST_Google_API.feature">
+                                                    <a href="pages/feature-scenarios/feature_5.html">Test Cases for POST Google API</a>
+                                                </span>
+                                            </td>
+                                            <td class="text-left">
+                                                <a href="pages/scenario-detail/scenario_17.html"
+                                                   style="word-break: break-all">Verify Positive Scenario Successfull for POST Request</a>
+                                            </td>
+                                            <td class="text-center small" data-order="2020-08-26T04:42:16.049Z">
+                                                2020-08-26<br>10:12:16
+                                            </td>
+                                            <td class="text-right small"
+                                                data-order="258,000,000">
+                                                <span class="nobr">0m 00s 258ms</span>
+                                            </td>
+                                        </tr>
+                                        <tr class="table-row-passed">
+                                            <td class="text-left">
+                                                <span data-toggle="tooltip" title="file:src/test/java/TestCases/Postman_POST_Google_API.feature">
+                                                    <a href="pages/feature-scenarios/feature_5.html">Test Cases for POST Google API</a>
+                                                </span>
+                                            </td>
+                                            <td class="text-left">
+                                                <a href="pages/scenario-detail/scenario_18.html"
+                                                   style="word-break: break-all">Verify Positive Scenario Successfull for POST Request</a>
+                                            </td>
+                                            <td class="text-center small" data-order="2020-08-26T04:42:16.309Z">
+                                                2020-08-26<br>10:12:16
+                                            </td>
+                                            <td class="text-right small"
+                                                data-order="221,000,000">
+                                                <span class="nobr">0m 00s 221ms</span>
+                                            </td>
+                                        </tr>
+
+                                        <tr class="table-row-passed">
+                                            <td class="text-left">
+                                                <span data-toggle="tooltip" title="file:src/test/java/TestCases/Postman_POST_Liabrary_API.feature">
+                                                    <a href="pages/feature-scenarios/feature_6.html">Test Cases for POST Liabrary API</a>
+                                                </span>
+                                            </td>
+                                            <td class="text-left">
+                                                <a href="pages/scenario-detail/scenario_20.html"
+                                                   style="word-break: break-all">Verify error message is displayed if book is alrady present</a>
+                                            </td>
+                                            <td class="text-center small" data-order="2020-08-26T04:42:16.657Z">
+                                                2020-08-26<br>10:12:16
+                                            </td>
+                                            <td class="text-right small"
+                                                data-order="139,000,000">
+                                                <span class="nobr">0m 00s 139ms</span>
+                                            </td>
+                                        </tr>
+
+                                        <tr class="table-row-passed">
+                                            <td class="text-left">
+                                                <span data-toggle="tooltip" title="file:src/test/java/TestCases/Postman_PUT_Google_API.feature">
+                                                    <a href="pages/feature-scenarios/feature_7.html">Test Cases for PUT Google API</a>
+                                                </span>
+                                            </td>
+                                            <td class="text-left">
+                                                <a href="pages/scenario-detail/scenario_22.html"
+                                                   style="word-break: break-all">Verify erroe message for wrong place id</a>
+                                            </td>
+                                            <td class="text-center small" data-order="2020-08-26T04:42:18.363Z">
+                                                2020-08-26<br>10:12:18
+                                            </td>
+                                            <td class="text-right small"
+                                                data-order="1,578,000,000">
+                                                <span class="nobr">0m 01s 578ms</span>
+                                            </td>
+                                        </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </main>
+
+<footer class="footer navbar-dark">
+    <div class="container-fluid">
+        <span>Cluecumber Report Plugin version 2.5.0 - Report generated on 2020-08-26 10:12:26.</span>
+    </div>
+</footer>    </body>
+    </html>
+
