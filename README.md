@@ -8,21 +8,23 @@ Framework include below dependency in POM.xml
 
 2)maven-cucumber-reporting
 
-3)testng
+3)cluecumber-report-plugin
 
-4)cucumber-java
+4)testng
 
-5)cucumber-testng
+5)cucumber-java
 
-6)rest-assured
+6)cucumber-testng
 
-7)json
+7)rest-assured
 
-8)groovy-all
+8)json
 
-9)log4j-api
+9)groovy-all
 
-10)log4j-core
+10)log4j-api
+
+11)log4j-core
 
 
 In testng.xml provided cucumberOptions.TestRunner
@@ -69,6 +71,8 @@ In testng.xml provided cucumberOptions.TestRunner
 
 ## target
   Cucumber report will be generated in cucumber-html-reports folder
+  
+  Cluecumber report wil be generated in cluecumber-report folder
   
   
 Integrated with jenkins so that we can run our all Test Cases from jenkins
